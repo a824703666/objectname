@@ -1,0 +1,23 @@
+{
+  "id": "1510470",
+  "name": "基本图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "437876",
+      "name": "三角形",
+      "font_class": "sanjiaoxing-copy-copy",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "9868083",
+      "name": "三角形",
+      "font_class": "sanjiaoxing",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}
