@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-$page_width:1190px;
+$center_width:1190px;
 $page_container:100%;
 $page_size:14px;
 $div_margin:10px;
@@ -122,8 +122,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-color: #f5f5f5;
 }
 
+/* line 59, ../sass/index.scss */
+.div1 {
+  width: 100%;
+  height: 300px;
+  background: lightcoral;
+}
+
+/* line 64, ../sass/index.scss */
+.div2 {
+  width: 100%;
+  height: 400px;
+  background: lightgreen;
+}
+
+/* line 69, ../sass/index.scss */
+.div3 {
+  width: 100%;
+  height: 250px;
+  background: lightsalmon;
+}
+
 /* **************底部部分*************************** **/
-/* line 62, ../sass/index.scss */
+/* line 77, ../sass/index.scss */
 #footer {
   margin-top: 500px;
   width: 100%;
