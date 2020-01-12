@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>唯品会</title>
+    <link rel="stylesheet" href="stylesheets/index.css" />
+    <link rel="stylesheet" href="stylesheets/shopList.css">
+</head>
+<body>
+    <div class="list-wrap">
+        <div class="goods-list">
+            <div class="inner">
+                <!-- 畅销标注 -->
+                <!-- <div class="goods-card">
+                    <div class="content">
+                        <div class="goods-img">
+                            <a href="">
+                                <img src="images/cart1.jpg" width="235" height="297" alt="">
+                                
+                        <div class="hot-tip"></div>
+                            </a>
+                        </div>
+                        <div class="goods-price">
+                            <div class="price-box">
+                                疯抢价
+                                <span>￥</span>
+                                <span class="discount-price">134</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-footer">
+                        <del class="origin-price">￥1009</del>
+                        <span class="goods-discount">1.2折</span>
+                    </div>
+                    <h4 class="goods-title-info">
+                        <a href="">职场干练长袖雪纺衬衫通勤百搭上衣新款春季纯色衬衣女</a>
+                    </h4>
+                </div>  -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    (function($) {
+        $.ajax({
+          url: "http://localhost/objectname/php/cart.php",
+          dataType: "json"
+        }).done(data => {
+          console.log(data);
+          let strhtml = "";
+          for (let value of data) {
+            strhtml += `
+            <div class="goods-card">
+                    <div class="content">
+                        <div class="goods-img">
+                            <a href="">
+                                <img src="images/${value.src}" width="235" height="297" alt="">
+                               
+                        <div class="hot-tip"></div>
+                            </a>
+                        </div>
+                        <div class="goods-price">
+                            <div class="price-box">
+                                疯抢价
+                                <span>￥</span>
+                                <span class="discount-price">${value.price}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-footer">
+                        <del class="origin-price">￥${value.del}</del>
+                        <span class="goods-discount">${value.discount}折</span>
+                    </div>
+                    <h4 class="goods-title-info">
+                        <a href="">${value.title}</a>
+                    </h4>
+                </div> 
+                    `;
+          }
+
+          $(".inner").html(strhtml);
+        });
+      })(jQuery);
+    </script>
+</body>
+</html>

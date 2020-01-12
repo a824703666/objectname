@@ -1,0 +1,119 @@
+.list-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  .goods-list {
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
+    min-height: 300px;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 1px;
+    letter-spacing: -0.1em;
+    *letter-spacing: normal;
+    word-spacing: -0.2em;
+    z-index: 9;
+    .inner {
+      width: 1020px;
+      
+    }
+  }
+  .goods-card {
+    position: relative;
+    z-index: 1;
+    width: 235px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+    word-spacing: 0;
+    vertical-align: top;
+    display: inline-block;
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    .goods-img {
+      position: relative;
+      z-index: 1;
+      width: 235px;
+      margin-bottom: 10px;
+      a {
+        display: block;
+        width: 235px;
+        height: 297px;
+      }
+    }
+    .hot-tip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .goods-price {
+    width: 235px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -10px;
+    background-color: #de3d96;
+    background: -webkit-linear-gradient(180deg, #cb78dc 0, #de3d96 100%);
+    background: linear-gradient(270deg, #cb78dc 0, #de3d96 100%);
+  }
+  .price-box {
+    font-size: 14px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    width: 225px;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .discount-price {
+      font-size: 24px;
+      margin-left: 2px;
+    }
+  }
+  .goods-footer{
+    display: inline-block;
+    width: 235px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #666;
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .origin-price{
+        display: inline-block;
+    vertical-align: top;
+    padding-top: 2px;
+    font-size: 16px;
+    color: #999;
+    }
+    .goods-discount{
+        float: inherit;
+    margin-left: 8px;
+    font-size: 14px;
+    color: #999;
+    padding: 0;
+    border: 0;
+    }
+  }
+  .goods-title-info{
+    max-height: 36px;
+    font-weight: 400;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    a{
+        color:#666;
+        font-size: 12px;
+        text-decoration: none;
+    }
+  }
+}
