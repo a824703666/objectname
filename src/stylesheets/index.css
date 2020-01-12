@@ -282,27 +282,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 164, ../sass/_louceng.scss */
+.shop-card {
+  display: inline-block;
+}
+/* line 166, ../sass/_louceng.scss */
 .shop-card .shop-box {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  margin-right: 20px;
-  width: 490px;
+  width: 477px;
   height: 333px;
+  margin-right: 20px;
   background: #fff;
 }
-/* line 173, ../sass/_louceng.scss */
+/* line 175, ../sass/_louceng.scss */
 .shop-card .shop-card-img {
-  width: 490px;
+  width: 477px;
   height: 235px;
 }
-/* line 177, ../sass/_louceng.scss */
+/* line 179, ../sass/_louceng.scss */
 .shop-card .info {
   position: relative;
   padding-left: 10px;
   background-color: #fff;
 }
-/* line 182, ../sass/_louceng.scss */
+/* line 184, ../sass/_louceng.scss */
 .shop-card .info-name {
   margin-top: 18px;
   cursor: pointer;
@@ -316,7 +320,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 455px;
   display: block;
 }
-/* line 195, ../sass/_louceng.scss */
+/* line 197, ../sass/_louceng.scss */
 .shop-card .discount {
   line-height: 32px;
   height: 32px;
@@ -324,7 +328,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 201, ../sass/_louceng.scss */
+/* line 203, ../sass/_louceng.scss */
 .shop-card .discount .brand-discount {
   color: #4d4d4d;
   font-size: 16px;
@@ -334,14 +338,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   white-space: nowrap;
   display: inline-block;
 }
-/* line 210, ../sass/_louceng.scss */
+/* line 212, ../sass/_louceng.scss */
 .shop-card .discount .sale-count {
   font-size: 18px;
   color: #f10582;
   margin-right: 3px;
   font-weight: 700;
 }
-/* line 216, ../sass/_louceng.scss */
+/* line 218, ../sass/_louceng.scss */
 .shop-card .discount .character {
   display: inline-block;
   margin-right: 8px;
@@ -349,7 +353,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #333;
   vertical-align: top;
 }
-/* line 223, ../sass/_louceng.scss */
+/* line 225, ../sass/_louceng.scss */
 .shop-card .discount .sale-detail {
   display: inline-block;
   font-size: 16px;
@@ -359,6 +363,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   white-space: nowrap;
   color: #333;
   width: 360px;
+}
+
+/* line 237, ../sass/_louceng.scss */
+#fixed-left {
+  position: fixed;
+  top: 112px;
+  left: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  padding: 5px 7px 0;
+  margin-bottom: 5px;
+  z-index: 9;
+  background-color: white;
+}
+/* line 247, ../sass/_louceng.scss */
+#fixed-left a {
+  display: block;
+  width: 62px;
+  height: 37px;
+  padding: 8px 5px;
+  border-bottom: 1px solid #eaeaea;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 256, ../sass/_louceng.scss */
+#fixed-left a .fa {
+  font-size: 20px;
+  margin-right: 6px;
+}
+/* line 260, ../sass/_louceng.scss */
+#fixed-left a:hover {
+  color: #f10180;
+}
+
+/* line 265, ../sass/_louceng.scss */
+.active {
+  background-color: #f10180;
+  border-radius: 4px;
+}
+/* line 268, ../sass/_louceng.scss */
+.active span {
+  color: #fff;
 }
 
 /* line 35, ../sass/index.scss */

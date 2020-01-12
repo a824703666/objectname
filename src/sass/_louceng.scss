@@ -160,20 +160,22 @@
     }
   }
 }
+
 .shop-card {
-    .shop-box{
-        display: inline-block;
+  display: inline-block;
+  .shop-box {
+    display: inline-block;
     vertical-align: top;
     position: relative;
-    margin-right: 20px;
-    width: 490px;
+    width: 477px;
     height: 333px;
+    margin-right: 20px;
     background: #fff;
-    }
-    .shop-card-img{
-        width: 490px;
+  }
+  .shop-card-img {
+    width: 477px;
     height: 235px;
-    }
+  }
   .info {
     position: relative;
     padding-left: 10px;
@@ -207,28 +209,63 @@
       white-space: nowrap;
       display: inline-block;
     }
-    .sale-count{
-    font-size: 18px;
-    color: #f10582;
-    margin-right: 3px;
-    font-weight: 700;
+    .sale-count {
+      font-size: 18px;
+      color: #f10582;
+      margin-right: 3px;
+      font-weight: 700;
     }
-    .character{
-        display: inline-block;
-    margin-right: 8px;
-    font-size: 14px;
-    color: #333;
-    vertical-align: top;
+    .character {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 14px;
+      color: #333;
+      vertical-align: top;
     }
-    .sale-detail{
-        display: inline-block;
-    font-size: 16px;
-    font-family: MicrosoftYaHei;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: #333;
-    width: 360px;
+    .sale-detail {
+      display: inline-block;
+      font-size: 16px;
+      font-family: MicrosoftYaHei;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #333;
+      width: 360px;
     }
+  }
+}
+#fixed-left {
+  position: fixed;
+  top: 112px;
+  left: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  padding: 5px 7px 0;
+  margin-bottom: 5px;
+  z-index: 9;
+  background-color: white;
+  a {
+    display: block;
+    width: 62px;
+    height: 37px;
+    padding: 8px 5px;
+    border-bottom: 1px solid #eaeaea;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    .fa{
+        font-size: 20px;
+        margin-right: 6px;
+    }
+    &:hover{
+        color: $height-color;
+    }
+  }
+}
+.active{
+  background-color: $height-color;
+  border-radius: 4px;
+  span{
+    color:#fff;
   }
 }
