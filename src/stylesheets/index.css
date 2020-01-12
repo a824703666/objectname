@@ -95,48 +95,344 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 34, ../sass/index.scss */
+.leftStyle {
+  float: left;
+}
+
+/* line 37, ../sass/index.scss */
+.clearfix:after {
+  content: '';
+  display: 'block';
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+
+/* line 45, ../sass/index.scss */
 #top {
   width: 100%;
   height: 30px;
   background: #f5f5f5;
   color: #777;
+  font-size: 12px;
 }
-/* line 39, ../sass/index.scss */
+/* line 51, ../sass/index.scss */
 #top .center {
   width: 1000px;
   margin: 0 auto;
   height: 100%;
   line-height: 30px;
 }
-/* line 44, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 #top .center .city {
-  width: 46px;
   height: 27px;
   position: relative;
   z-index: 1;
   padding-left: 15px;
   padding-right: 23px;
+  float: left;
   cursor: pointer;
   border-width: 1px 1px 0;
   border-style: solid;
   border-color: #f5f5f5;
+  color: #333;
+}
+/* line 70, ../sass/index.scss */
+#top .center .iconfont {
+  font-size: 9px;
+  color: #999;
+}
+/* line 74, ../sass/index.scss */
+#top .center .list {
+  float: right;
+}
+/* line 76, ../sass/index.scss */
+#top .center .list a {
+  color: #666;
+}
+/* line 81, ../sass/index.scss */
+#top .center .breadcrumb {
+  padding: 0;
+  margin-bottom: 0;
+}
+/* line 84, ../sass/index.scss */
+#top .center .breadcrumb li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+/* line 88, ../sass/index.scss */
+#top .center .breadcrumb span {
+  display: inline-block;
+  height: 9px;
+}
+/* line 92, ../sass/index.scss */
+#top .center .breadcrumb img {
+  vertical-align: text-bottom;
 }
 
-/* line 59, ../sass/index.scss */
-.div1 {
+/* line 98, ../sass/index.scss */
+.nav-position {
+  position: relative;
+}
+/* line 101, ../sass/index.scss */
+.nav-position:hover .dropdown-menu {
+  display: block;
+}
+/* line 105, ../sass/index.scss */
+.nav-position .dropdown-menu {
+  min-width: 100px;
+  text-align: center;
+}
+/* line 108, ../sass/index.scss */
+.nav-position .dropdown-menu li {
+  margin-right: 0 !important;
+}
+
+/* line 113, ../sass/index.scss */
+.iconfont {
+  font-size: 9px;
+}
+
+/* line 116, ../sass/index.scss */
+.nav-tool {
+  float: right;
+}
+/* line 118, ../sass/index.scss */
+.nav-tool li {
+  float: left;
+}
+
+/* line 122, ../sass/index.scss */
+#nav {
   width: 100%;
-  height: 300px;
-  background: lightcoral;
+  height: 100px;
+}
+/* line 125, ../sass/index.scss */
+#nav .nav-center {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 128, ../sass/index.scss */
+#nav .nav-center .logo-box {
+  position: relative;
+  float: left;
+  z-index: 1;
+  margin-right: 1px;
+  min-width: 140px;
+  height: 100px;
+}
+/* line 135, ../sass/index.scss */
+#nav .nav-center .logo-box .img-wrap {
+  margin-left: -20px;
+  min-width: 160px;
+  overflow: hidden;
+}
+/* line 139, ../sass/index.scss */
+#nav .nav-center .logo-box .img-wrap img {
+  border: 0 none;
+  vertical-align: top;
+}
+/* line 146, ../sass/index.scss */
+#nav .nav-center .vip-tip {
+  position: relative;
+  z-index: 1;
+  width: 304px;
+  height: 100px;
+}
+/* line 151, ../sass/index.scss */
+#nav .nav-center .vip-tip .service-link {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 101px;
+  height: 100px;
+  float: left;
+}
+/* line 159, ../sass/index.scss */
+#nav .nav-center .vip-tip img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* line 166, ../sass/index.scss */
+#nav .nav-center .service-search {
+  width: 391px;
+  height: 32px;
+  margin-top: 33px;
+  margin-left: 50px;
+}
+/* line 171, ../sass/index.scss */
+#nav .nav-center .service-search .search-input {
+  width: 330px;
+  border-radius: 0;
+  border: 2px solid #fa2a83;
+  border-right: 0;
+}
+/* line 177, ../sass/index.scss */
+#nav .nav-center .service-search .input-group-btn {
+  width: 53px;
+  height: 34px;
+  text-align: center;
+  background-color: #fa2a83;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 16px;
+  color: #fff;
+}
+/* line 188, ../sass/index.scss */
+#nav .nav-center .service-search .hotWords .breadcrumb {
+  padding-left: 0;
+  background-color: #fff;
+}
+/* line 192, ../sass/index.scss */
+#nav .nav-center .service-search .hotWords a {
+  font-size: 12px;
+  color: #999;
+}
+/* line 199, ../sass/index.scss */
+#nav .nav-center .header-cart {
+  position: relative;
+  z-index: 9;
+  float: right;
+  margin-top: 33px;
+  margin-left: 15px;
+  width: 96px;
+}
+/* line 206, ../sass/index.scss */
+#nav .nav-center .header-cart .cart-tool {
+  position: relative;
+  z-index: 1;
+  padding-right: 33px;
+  padding-left: 25px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f6f7f9;
+  border-radius: 2px;
+}
+/* line 217, ../sass/index.scss */
+#nav .nav-center .header-cart .cart-tool .ico-bag {
+  background-image: url(../images/sprites-hash.png);
+  background-position: -114px -208px;
+  width: 12px;
+  height: 17px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+/* line 227, ../sass/index.scss */
+#nav .nav-center .header-cart .cart-tool span {
+  font-size: 12px;
+  color: #333;
 }
 
-/* line 64, ../sass/index.scss */
+/* line 235, ../sass/index.scss */
+.main-nav {
+  height: 43px;
+  line-height: 43px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #fff;
+}
+/* line 241, ../sass/index.scss */
+.main-nav .nav-inner {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+/* line 247, ../sass/index.scss */
+.main-nav .nav-inner .nav .goods-class {
+  background-color: #f10180;
+  width: 156px;
+  height: auto;
+  margin-right: 16px;
+}
+/* line 252, ../sass/index.scss */
+.main-nav .nav-inner .nav .goods-class a {
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+/* line 256, ../sass/index.scss */
+.main-nav .nav-inner .nav .goods-class a:hover {
+  background-color: #f10180;
+  color: #fff;
+}
+/* line 260, ../sass/index.scss */
+.main-nav .nav-inner .nav .goods-class a img {
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 6px;
+}
+/* line 267, ../sass/index.scss */
+.main-nav .nav-inner .nav li a {
+  font-size: 16px;
+  color: #333;
+  padding: 0 10px;
+}
+/* line 271, ../sass/index.scss */
+.main-nav .nav-inner .nav li a:hover {
+  background-color: #fff;
+  color: #f10180;
+}
+
+/* line 280, ../sass/index.scss */
+.banner {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url(../images/bj.jpg);
+}
+/* line 284, ../sass/index.scss */
+.banner .banner-wrap {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+/* line 289, ../sass/index.scss */
+.banner .banner-wrap .content-box {
+  padding: 12px;
+  padding-bottom: 0;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.86);
+  width: 976px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(167, 167, 167, 0.4);
+}
+/* line 298, ../sass/index.scss */
+.banner .banner-wrap .content-box .banner-content {
+  width: 976px;
+  border-bottom: none;
+  height: 380px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+/* line 305, ../sass/index.scss */
+.banner .banner-wrap .content-box .banner-content .swiper-list {
+  z-index: 1;
+  overflow: hidden;
+  height: 340px;
+}
+/* line 310, ../sass/index.scss */
+.banner .banner-wrap .content-box .banner-content .banner-img {
+  height: 340px;
+}
+
+/* line 318, ../sass/index.scss */
 .div2 {
   width: 100%;
   height: 400px;
   background: lightgreen;
 }
 
-/* line 69, ../sass/index.scss */
+/* line 323, ../sass/index.scss */
 .div3 {
   width: 100%;
   height: 250px;
@@ -144,7 +440,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* **************底部部分*************************** **/
-/* line 77, ../sass/index.scss */
+/* line 331, ../sass/index.scss */
 #footer {
   margin-top: 500px;
   width: 100%;

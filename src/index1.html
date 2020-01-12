@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>唯品会新春特卖</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/index.css">
     <link rel="stylesheet" href="fonts/iconfont.css">
 </head>
@@ -15,16 +17,137 @@
 <body>
     <!-- -----------------------------头部部分 -->
     <!-- 头部顶部部分 -->
-    <div id="top">
-        <div class="center">
-            <div class="city">城市
-                <span class="iconfont icon-sanjiaoxing"></span>
+    <div class="header">
+        <div id="top">
+            <div class="center">
+                <div class="city">城市
+                    <span class="iconfont icon-sanjiaoxing"></span>
+                </div>
+                <div class="list">
+                    <ol class="breadcrumb">
+                        <li><a>请登录</a></li>
+                        <li>
+    
+                            <a href="">注册</a>
+                        </li>
+                        <li>
+                            <img src="images/header_sign-hash.gif" alt="">
+                            <a href="">签到有礼</a></li>
+                        <li><a href="">我的订单</a></li>
+                        <li class="nav-position">
+                                我的特卖<span class="iconfont icon-sanjiaoxing"></span>
+                                <ul class="dropdown-menu">
+                                    <li>商品收藏</li>
+                                    <li>品牌收藏</li>
+                                    <li>我的足迹</li>
+                                </ul>
+                        </li>
+                        <li class="nav-position">会员俱乐部<span class="iconfont icon-sanjiaoxing"></span>
+                            <ul class="dropdown-menu">
+                                <li>俱乐部首页</li>
+                                <li>唯品会兑换</li>
+                            </ul>
+                        </li>
+                        <li class="nav-position">客户服务<span class="iconfont icon-sanjiaoxing"></span>
+                            <ul class="dropdown-menu">
+                                <li>联系客服</li>
+                                <li>帮助中心</li>
+                                <li>服务中心</li>
+                                <li>知识产权投诉</li>
+                            </ul>
+                        </li>
+                        <li>手机版</li>
+                        <li>更多<span class="iconfont icon-sanjiaoxing"></span></li>
+                    </ol>
+                </div>
             </div>
-            <div class="list">请登录<span>/</span></div>
+        </div>
+        <!-- 搜索部分 -->
+        <div id="nav">
+            <div class="nav-center clearfix">
+                    <div class="logo-box">
+                        <div class="img-wrap">
+                            <a href="">
+                                <img src="images/1550737570483.png" alt="" height="100">
+                            </a>
+                        </div>
+                        
+                    </div>
+                <div class="vip-tip leftStyle">
+                    <a class="service-link" href=""></a>
+                    <a class="service-link" href=""></a>
+                    <a class="service-link" href=""></a>
+                    <img src="images/vip-tip.png" alt="" width="304" height="100">
+                </div>
+                <div class="leftStyle service-search">
+                    <div>
+                        <input type="text" class="form-control search-input leftStyle" placeholder="女士羽绒服">
+                        <span class="input-group-btn">
+                          搜索
+                        </span>
+                    </div>
+                    <div class="hotWords">
+                        <ol class="breadcrumb">
+                            <li><a href="#">女士羽绒服</a></li>
+                            <li><a href="#">男士羽绒服</a></li>
+                            <li><a href="#">女靴</a></li>
+                            <li><a href="#">女士大衣</a></li>
+                            <li><a href="#">护肤套装</a></li>
+                          </ol>
+                    </div>
+                    
+                </div>
+                <div class="header-cart">
+                    <div class="cart-tool">
+                        <span class="ico-bag"></span>
+                        <span>购物袋</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 菜单主题部分 -->
+        <div class="main-nav">
+            <div class="nav-inner">
+                <ul class="nav nav-pills">
+                    <li class="goods-class" role="presentation">
+                        <a href="#">
+                            <img src="images/class.png" alt="">
+                        商品分类
+                    </a></li>
+                    <li role="presentation"><a href="#">首页</a></li>
+                    <li role="presentation"><a href="#">最后疯抢</a></li>
+                    <li role="presentation"><a href="#">唯品快抢</a></li>
+                    <li role="presentation"><a href="#">女装</a></li>
+                    <li role="presentation"><a href="#">母婴</a></li>
+                    <li role="presentation"><a href="#">家电</a></li>
+                    <li role="presentation"><a href="#">国际</a></li>
+                    <li role="presentation"><a href="#">美妆</a></li>
+                    <li role="presentation"><a href="#">鞋包</a></li>
+                    <li role="presentation"><a href="#">男装</a></li>
+                    <li role="presentation"><a href="#">预告</a></li>
+                    <li role="presentation"><a href="#">更多</a></li>
+                  </ul>
+            </div>
         </div>
     </div>
+    
     <!-- 内容区 -->
-    <div class="div1">banner</div>
+    <div class="banner">
+        <div class="banner-wrap">
+            <div class="content-box">
+                <div class="banner-content">
+                    <ul class="swiper-list">
+                        <li>
+                            <a href="">
+                                <img class="banner-img" src="images/banner1.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="div2">main</div>
     <div class="div3">list</div>
     <div class="div3">list</div>
