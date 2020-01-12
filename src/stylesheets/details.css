@@ -1,0 +1,302 @@
+/* line 1, ../sass/details.scss */
+.FW-product {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 22px;
+  z-index: 10;
+}
+
+/* line 9, ../sass/details.scss */
+.M-pic {
+  float: left;
+  position: relative;
+}
+
+/* line 13, ../sass/details.scss */
+.f-hide, .hidden {
+  display: none;
+}
+
+/* line 16, ../sass/details.scss */
+.sold-tag {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  z-index: 100;
+}
+
+/* line 22, ../sass/details.scss */
+.pic-sliderwrap {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  z-index: 99;
+  margin-bottom: 7px;
+  background-color: #f7f7f7;
+}
+
+/* line 30, ../sass/details.scss */
+.show-midpic {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  text-align: center;
+}
+
+/* line 36, ../sass/details.scss */
+.icon-a {
+  background-image: url(../images/sprites-hash.png);
+  background-position: -162px -234px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: 100;
+}
+
+/* line 47, ../sass/details.scss */
+.zoomPad {
+  float: left;
+  position: relative;
+  z-index: 99;
+  cursor: crosshair;
+  text-align: center;
+  width: 420px;
+  height: 420px;
+  overflow: hidden;
+}
+
+/* line 57, ../sass/details.scss */
+.zoomPup {
+  overflow: hidden;
+  background-color: #fff;
+  opacity: .6;
+  filter: alpha(opacity=60);
+  position: absolute;
+  border: 1px solid #ccc;
+  z-index: 101;
+  cursor: crosshair;
+}
+
+/* line 67, ../sass/details.scss */
+.zoomWindow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 420px;
+  height: 420px;
+  z-index: 110;
+}
+
+/* line 75, ../sass/details.scss */
+.zoomWrapper {
+  position: relative;
+  z-index: 110;
+  margin: 0 auto;
+}
+
+/* line 80, ../sass/details.scss */
+.pic-slider {
+  position: relative;
+  width: 420px;
+  height: 64px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* line 87, ../sass/details.scss */
+.pic-slider-wrap {
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* line 91, ../sass/details.scss */
+.pic-slider-items {
+  width: 62px;
+  height: 62px;
+  margin: 0 7px 0 0;
+  float: left;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #f2f2f2;
+  background-color: #f7f7f7;
+}
+/* line 101, ../sass/details.scss */
+.pic-slider-items:hover {
+  border: 1px solid #f10180;
+}
+
+/* line 105, ../sass/details.scss */
+.pic-slider-items img {
+  z-index: 10;
+}
+
+/* line 108, ../sass/details.scss */
+.pic-slider-items:last-child {
+  margin-right: 0;
+}
+
+/* line 111, ../sass/details.scss */
+.M-productInfo {
+  overflow: visible;
+}
+
+/* line 114, ../sass/details.scss */
+.M-productInfo {
+  float: right;
+  width: 550px;
+  position: relative;
+  z-index: 100;
+  min-height: 634px;
+}
+
+/* line 121, ../sass/details.scss */
+.product-content-inner {
+  min-height: 538px;
+  _height: 536px;
+}
+
+/* line 125, ../sass/details.scss */
+.pib-title-class {
+  display: block;
+  color: #007cff;
+  width: 340px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 22px;
+  min-height: 22px;
+}
+
+/* line 137, ../sass/details.scss */
+.pib-title-detail {
+  font-size: 16px;
+  color: #333;
+  max-height: 40px;
+  overflow: hidden;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* line 147, ../sass/details.scss */
+.goods-description-title {
+  font-size: 14px;
+  color: #999;
+  max-height: 85px;
+  overflow: hidden;
+}
+
+/* line 153, ../sass/details.scss */
+.special-price .pi-price-box {
+  padding-bottom: 10px;
+}
+
+/* line 156, ../sass/details.scss */
+.pi-price-box {
+  background: #f9f9f9;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 13;
+  _width: 500px;
+  _padding-left: 0;
+}
+
+/* line 164, ../sass/details.scss */
+.spcecialPrice-box {
+  color: #333;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 20px;
+}
+
+/* line 172, ../sass/details.scss */
+.hasSpecialSvip .spcecialPrice-box .sp-info {
+  margin-top: 0;
+}
+
+/* line 175, ../sass/details.scss */
+.spcecialPrice-box .sp-info {
+  float: left;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  max-width: 339px;
+}
+
+/* line 182, ../sass/details.scss */
+.spcecialPrice-box .sp-title {
+  font-size: 14px;
+  background: #de3d96;
+  border-radius: 32.5px;
+  padding: 2px 8px;
+  margin-top: 18px;
+  color: #fff;
+  float: left;
+  max-width: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* line 195, ../sass/details.scss */
+.special-price .spcecialPrice-box .pbox-yen {
+  font-size: 24px;
+  float: left;
+}
+
+/* line 199, ../sass/details.scss */
+.spcecialPrice-box .sp-price {
+  font-size: 38px;
+  font-family: arial;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+/* line 208, ../sass/details.scss */
+.spcecialPrice-box .sp-postfix {
+  font-size: 20px;
+  color: #333;
+  margin-left: 3px;
+  float: left;
+  margin-top: 13px;
+}
+
+/* line 215, ../sass/details.scss */
+.special-price .pbox-market, .special-price .sp-discount {
+  padding-left: 10px;
+  padding-right: 0;
+  float: left;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #999;
+}
+
+/* line 223, ../sass/details.scss */
+.special-price .pbox-market, .special-price .sp-discount {
+  padding-left: 10px;
+  padding-right: 0;
+  float: left;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #999;
+}
+
+/* line 231, ../sass/details.scss */
+.spcecialPrice-box .sp-info .pbox-yen {
+  margin-top: 13px;
+  margin-left: 8px;
+}

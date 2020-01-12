@@ -1,10 +1,75 @@
-/* line 1, ../sass/shopList.scss */
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/shopList.scss */
 .list-wrap {
   width: 1000px;
   margin: 0 auto;
   position: relative;
 }
-/* line 5, ../sass/shopList.scss */
+/* line 6, ../sass/shopList.scss */
 .list-wrap .goods-list {
   margin-bottom: 60px;
   padding-bottom: 10px;
@@ -19,11 +84,11 @@
   word-spacing: -0.2em;
   z-index: 9;
 }
-/* line 18, ../sass/shopList.scss */
+/* line 19, ../sass/shopList.scss */
 .list-wrap .goods-list .inner {
   width: 1020px;
 }
-/* line 23, ../sass/shopList.scss */
+/* line 24, ../sass/shopList.scss */
 .list-wrap .goods-card {
   position: relative;
   z-index: 1;
@@ -35,25 +100,25 @@
   vertical-align: top;
   display: inline-block;
 }
-/* line 33, ../sass/shopList.scss */
+/* line 34, ../sass/shopList.scss */
 .list-wrap .goods-card .content {
   position: relative;
   z-index: 1;
 }
-/* line 37, ../sass/shopList.scss */
+/* line 38, ../sass/shopList.scss */
 .list-wrap .goods-card .goods-img {
   position: relative;
   z-index: 1;
   width: 235px;
   margin-bottom: 10px;
 }
-/* line 42, ../sass/shopList.scss */
+/* line 43, ../sass/shopList.scss */
 .list-wrap .goods-card .goods-img a {
   display: block;
   width: 235px;
   height: 297px;
 }
-/* line 48, ../sass/shopList.scss */
+/* line 49, ../sass/shopList.scss */
 .list-wrap .goods-card .hot-tip {
   position: absolute;
   top: 0;
@@ -62,7 +127,7 @@
   width: 45px;
   height: 45px;
 }
-/* line 57, ../sass/shopList.scss */
+/* line 58, ../sass/shopList.scss */
 .list-wrap .goods-price {
   width: 235px;
   height: 30px;
@@ -72,7 +137,7 @@
   background: -webkit-linear-gradient(180deg, #cb78dc 0, #de3d96 100%);
   background: linear-gradient(270deg, #cb78dc 0, #de3d96 100%);
 }
-/* line 66, ../sass/shopList.scss */
+/* line 67, ../sass/shopList.scss */
 .list-wrap .price-box {
   font-size: 14px;
   color: #fff;
@@ -84,12 +149,12 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 76, ../sass/shopList.scss */
+/* line 77, ../sass/shopList.scss */
 .list-wrap .price-box .discount-price {
   font-size: 24px;
   margin-left: 2px;
 }
-/* line 81, ../sass/shopList.scss */
+/* line 82, ../sass/shopList.scss */
 .list-wrap .goods-footer {
   display: inline-block;
   width: 235px;
@@ -101,7 +166,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 91, ../sass/shopList.scss */
+/* line 92, ../sass/shopList.scss */
 .list-wrap .goods-footer .origin-price {
   display: inline-block;
   vertical-align: top;
@@ -109,7 +174,7 @@
   font-size: 16px;
   color: #999;
 }
-/* line 98, ../sass/shopList.scss */
+/* line 99, ../sass/shopList.scss */
 .list-wrap .goods-footer .goods-discount {
   float: inherit;
   margin-left: 8px;
@@ -118,7 +183,7 @@
   padding: 0;
   border: 0;
 }
-/* line 107, ../sass/shopList.scss */
+/* line 108, ../sass/shopList.scss */
 .list-wrap .goods-title-info {
   max-height: 36px;
   font-weight: 400;
@@ -126,7 +191,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 113, ../sass/shopList.scss */
+/* line 114, ../sass/shopList.scss */
 .list-wrap .goods-title-info a {
   color: #666;
   font-size: 12px;
