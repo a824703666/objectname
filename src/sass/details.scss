@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 .FW-product {
     width: 1000px;
     margin: 0 auto;
@@ -259,4 +262,105 @@
     position: absolute;
     left: 0px;
     top: 0px;
+}
+// 配送
+.pi-attr-box {
+    position: relative;
+    z-index: 10;
+    dt {
+        float: left;
+        font-size: 12px;
+        width: 40px;
+        text-align: left;
+        color: #999;
+        line-height: 32px;
+        overflow: hidden;
+    }
+    dd{
+        float: left;
+    }
+}
+.cartAdd-form {
+    position: relative;
+    z-index: 5;
+    span{
+        color:#333;
+        font-size: 12px;
+    }
+}
+.g-delivery-address {
+    z-index: 20;
+    position: relative;
+}
+.i-freight {
+    position: relative;
+    z-index: 14;
+    margin-top: 5px;
+    line-height: 32px;
+}
+.i-color {
+    padding-top: 12px;
+    position: relative;
+    z-index: 12;
+    min-height: 40px;
+}
+.color-list {
+    width: 500px;
+}
+.color-list-item {
+    float: left;
+    height: 32px;
+    _height: 31px;
+    position: relative;
+    margin: 0 10px 9px 0;
+}
+.color-list .color-soldOut {
+    background-color: #e5e5e5;
+    color: #666;
+}
+.color-list-item a {
+    display: inline-block;
+    height: 28px;
+    max-width: 396px;
+    min-width: 68px;
+    padding: 1px;
+    border: 1px solid #ccc;
+}
+.color-pic-wrapper {
+    float: left;
+    width: 28px;
+    height: 28px;
+    background-color: #f7f7f7;
+}
+.i-select {
+    background-image:url(../images/sprites-hash.png);
+    background-position: -144px -170px;
+    width: 17px;
+    height: 16px;
+    bottom: -1px;
+    right: -1px;
+}
+.pi-attr-box dt {
+    float: left;
+    font-size: 12px;
+    width: 40px;
+    text-align: left;
+    color: #999;
+    line-height: 32px;
+    overflow: hidden;
+}
+.color-list .color-selected {
+    padding: 0;
+    border: 2px solid #f43499;
+}
+.color-item-name {
+    float: left;
+    text-align: center;
+    max-width: 343px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 15px 0 10px;
+    line-height: 28px;
+    vertical-align: top;
 }

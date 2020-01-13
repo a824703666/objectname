@@ -63,7 +63,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../sass/login.scss */
+/* line 4, ../sass/login.scss */
+body {
+  min-width: 1000px;
+}
+
+/* line 8, ../sass/login.scss */
 .header-inner {
   position: relative;
   z-index: 1;
@@ -73,7 +78,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 100px;
   zoom: 1;
 }
-/* line 15, ../sass/login.scss */
+/* line 17, ../sass/login.scss */
 .header-inner .c-logo-link {
   background-image: url(../images/sprites-hash.png);
   background-position: -308px -57px;
@@ -84,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 500px;
   overflow: hidden;
 }
-/* line 26, ../sass/login.scss */
+/* line 28, ../sass/login.scss */
 .header-inner .c-service {
   background-image: url(../images/sprites-hash.png);
   background-position: 0 0;
@@ -96,23 +101,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 1;
 }
 
-/* line 38, ../sass/login.scss */
+/* line 40, ../sass/login.scss */
 .f-right {
   float: right;
 }
 
-/* line 42, ../sass/login.scss */
+/* line 44, ../sass/login.scss */
 .f-left {
   float: left;
 }
 
-/* line 47, ../sass/login.scss */
+/* line 49, ../sass/login.scss */
 .c-body {
   background-image: url(../images/loginBJ.jpg);
   background-position: top center;
   background-repeat: no-repeat;
 }
-/* line 52, ../sass/login.scss */
+/* line 54, ../sass/login.scss */
 .c-body .c-content {
   margin-right: auto;
   margin-left: auto;
@@ -120,22 +125,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   min-height: 550px;
   width: 1000px;
 }
-/* line 60, ../sass/login.scss */
+/* line 62, ../sass/login.scss */
 .c-body .login-panel {
   width: 360px;
   border-radius: 2px;
   background-color: #fff;
 }
-/* line 66, ../sass/login.scss */
+/* line 68, ../sass/login.scss */
 .c-body .tab-box {
   width: 360px;
 }
-/* line 71, ../sass/login.scss */
+/* line 73, ../sass/login.scss */
 .c-body .tab-nav {
   border-bottom: 1px solid #e0e0e0;
   font-size: 0;
 }
-/* line 75, ../sass/login.scss */
+/* line 77, ../sass/login.scss */
 .c-body .tab-nav .tab-nav-item {
   display: inline-block;
   width: 180px;
@@ -148,16 +153,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
   overflow: hidden;
 }
-/* line 87, ../sass/login.scss */
+/* line 89, ../sass/login.scss */
 .c-body .tab-nav .tab-nav-item:hover {
   color: #f10180;
 }
-/* line 92, ../sass/login.scss */
+/* line 94, ../sass/login.scss */
 .c-body .tab-nav .tab-active {
   color: #f10180;
   cursor: default;
 }
-/* line 99, ../sass/login.scss */
+/* line 101, ../sass/login.scss */
 .c-body .tab-panel {
   padding-top: 36px;
   text-align: center;
@@ -165,7 +170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 1;
   min-height: 192px;
 }
-/* line 106, ../sass/login.scss */
+/* line 108, ../sass/login.scss */
 .c-body .tab-panel .code-content {
   position: absolute;
   top: 50%;
@@ -178,7 +183,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #fff;
   border: 1px solid #f0f0f0;
 }
-/* line 118, ../sass/login.scss */
+/* line 120, ../sass/login.scss */
 .c-body .tab-panel .code-content .c-qr-mask {
   display: none;
   position: absolute;
@@ -189,14 +194,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.8);
 }
-/* line 128, ../sass/login.scss */
+/* line 130, ../sass/login.scss */
 .c-body .tab-panel .code-content .c-qr-mask .tip-text {
   margin-bottom: 15px;
   padding-top: 44px;
   font-size: 14px;
   font-weight: 700;
 }
-/* line 135, ../sass/login.scss */
+/* line 137, ../sass/login.scss */
 .c-body .tab-panel .code-content .c-qr-mask .refresh-btn {
   background-color: #f10180;
   border: 1px solid #f10180;
@@ -214,7 +219,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: .3s;
 }
 
-/* line 156, ../sass/login.scss */
+/* line 158, ../sass/login.scss */
 .panel-footer {
   margin-bottom: 20px;
   color: #333;
@@ -222,17 +227,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 12px;
   text-align: center;
 }
-/* line 163, ../sass/login.scss */
+/* line 165, ../sass/login.scss */
 .panel-footer .u-text-highlight {
   color: #f10180;
 }
 
-/* line 168, ../sass/login.scss */
+/* line 170, ../sass/login.scss */
 .login-more {
   padding-right: 30px;
   padding-left: 30px;
 }
-/* line 172, ../sass/login.scss */
+/* line 174, ../sass/login.scss */
 .login-more .methods-box {
   width: 300px;
   margin: 0 auto;
@@ -242,13 +247,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-bottom: 15px;
 }
 
-/* line 182, ../sass/login.scss */
+/* line 184, ../sass/login.scss */
 .m-passport-from {
   margin-right: auto;
   margin-left: auto;
   width: 300px;
 }
-/* line 187, ../sass/login.scss */
+/* line 189, ../sass/login.scss */
 .m-passport-from .u-input {
   padding-left: 40px;
   width: 248px;
@@ -256,7 +261,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 32px;
 }
 
-/* line 196, ../sass/login.scss */
+/* line 198, ../sass/login.scss */
 .ui-form-item-group {
   position: relative;
   display: inline-block;
@@ -268,7 +273,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 1 !important;
 }
 
-/* line 207, ../sass/login.scss */
+/* line 209, ../sass/login.scss */
 .ui-input,
 .ui-textarea {
   padding: 6px 10px;
@@ -283,7 +288,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: border-color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), background-color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-/* line 221, ../sass/login.scss */
+/* line 223, ../sass/login.scss */
 .has-form-item-icon .c-icon-form {
   position: absolute;
   top: 13px;
@@ -291,7 +296,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 1;
 }
 
-/* line 228, ../sass/login.scss */
+/* line 230, ../sass/login.scss */
 .c-icon-account {
   background-image: url(../images/sprites-hash.png);
   background-position: -400px -205px;
@@ -299,13 +304,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 20px;
 }
 
-/* line 235, ../sass/login.scss */
+/* line 237, ../sass/login.scss */
 .c-icon {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 240, ../sass/login.scss */
+/* line 242, ../sass/login.scss */
 .u-input-tip {
   font-size: 12px;
   color: #ec5042;
@@ -323,12 +328,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 257, ../sass/login.scss */
+/* line 259, ../sass/login.scss */
 .ui-form-item-group-with-gap {
   padding-bottom: 22px;
 }
 
-/* line 261, ../sass/login.scss */
+/* line 263, ../sass/login.scss */
 .ui-form-item-group {
   position: relative;
   display: inline-block;
@@ -340,45 +345,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 1 !important;
 }
 
-/* line 272, ../sass/login.scss */
+/* line 274, ../sass/login.scss */
 .u-other-item {
   width: 300px;
   height: 19px;
 }
-/* line 276, ../sass/login.scss */
+/* line 278, ../sass/login.scss */
 .u-other-item a {
   text-decoration: none;
 }
-/* line 279, ../sass/login.scss */
+/* line 281, ../sass/login.scss */
 .u-other-item a:hover {
   color: #f10180;
 }
-/* line 284, ../sass/login.scss */
+/* line 286, ../sass/login.scss */
 .u-other-item .i-forget-link {
   color: #333;
   font-size: 12px;
 }
 
-/* line 290, ../sass/login.scss */
+/* line 292, ../sass/login.scss */
 .c-login-switch {
   font-size: 14px;
   color: #333;
   line-height: 14px;
 }
 
-/* line 296, ../sass/login.scss */
+/* line 298, ../sass/login.scss */
 .ui-btn-loading,
 button.ui-btn-loading {
   padding: 0;
   overflow: hidden;
 }
 
-/* line 302, ../sass/login.scss */
+/* line 304, ../sass/login.scss */
 .u-submit-function {
   width: 300px;
 }
 
-/* line 306, ../sass/login.scss */
+/* line 308, ../sass/login.scss */
 .ui-btn-primary,
 .ui-btn-primary:active,
 .ui-btn-primary:hover,
@@ -388,14 +393,14 @@ button.ui-btn-loading {
   color: #fff;
 }
 
-/* line 315, ../sass/login.scss */
+/* line 317, ../sass/login.scss */
 .ui-btn-primary,
 .ui-btn1 {
   background-color: #f10180;
   border: 1px solid #f10180;
 }
 
-/* line 321, ../sass/login.scss */
+/* line 323, ../sass/login.scss */
 .ui-btn-big,
 .ui-btn-large {
   min-width: 72px;
@@ -406,7 +411,7 @@ button.ui-btn-loading {
   height: 44px;
 }
 
-/* line 331, ../sass/login.scss */
+/* line 333, ../sass/login.scss */
 .ui-btn-big,
 .ui-btn-large,
 .ui-btn-medium,
@@ -424,13 +429,13 @@ button.ui-btn-loading {
   outline: none;
 }
 
-/* line 348, ../sass/login.scss */
+/* line 350, ../sass/login.scss */
 .control-group .ipt-verify-code {
   width: 106px;
   margin-right: 10px;
 }
 
-/* line 353, ../sass/login.scss */
+/* line 355, ../sass/login.scss */
 .control-group .btn-verify-code {
   padding: 0 12px;
   width: 106px;
@@ -439,7 +444,7 @@ button.ui-btn-loading {
   line-height: 44px;
 }
 
-/* line 361, ../sass/login.scss */
+/* line 363, ../sass/login.scss */
 .ui-btn-disable,
 .ui-btn-disable:active,
 .ui-btn-disable:hover,
@@ -452,7 +457,7 @@ button.ui-btn-loading {
   cursor: not-allowed;
 }
 
-/* line 373, ../sass/login.scss */
+/* line 375, ../sass/login.scss */
 .c-icon-captcha {
   background-image: url(../images/sprites-hash.png);
   background-position: -592px -161px;
@@ -460,13 +465,13 @@ button.ui-btn-loading {
   height: 20px;
 }
 
-/* line 380, ../sass/login.scss */
+/* line 382, ../sass/login.scss */
 .tab-content .control-group .ipt-verify-code {
   width: 106px;
   margin-right: 10px;
 }
 
-/* line 385, ../sass/login.scss */
+/* line 387, ../sass/login.scss */
 .control-group .ui-input {
   padding-left: 40px;
   width: 250px;
@@ -474,7 +479,7 @@ button.ui-btn-loading {
   line-height: 32px;
 }
 
-/* line 392, ../sass/login.scss */
+/* line 394, ../sass/login.scss */
 .c-footer {
   margin-right: auto;
   margin-left: auto;
@@ -483,7 +488,7 @@ button.ui-btn-loading {
   line-height: 78px;
 }
 
-/* line 400, ../sass/login.scss */
+/* line 402, ../sass/login.scss */
 .c-copyright {
   color: #666;
   text-align: center;

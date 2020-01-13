@@ -1,7 +1,9 @@
 @import "compass/reset";
 $spritesImg:url(../images/sprites-hash.png);
 $loginBJ:url(../images/loginBJ.jpg);
-
+body{
+    min-width: 1000px;
+}
 // 头部
 .header-inner {
     position: relative;

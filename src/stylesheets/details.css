@@ -1,4 +1,9 @@
 /* line 1, ../sass/details.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 4, ../sass/details.scss */
 .FW-product {
   width: 1000px;
   margin: 0 auto;
@@ -8,18 +13,18 @@
   z-index: 10;
 }
 
-/* line 9, ../sass/details.scss */
+/* line 12, ../sass/details.scss */
 .M-pic {
   float: left;
   position: relative;
 }
 
-/* line 13, ../sass/details.scss */
+/* line 16, ../sass/details.scss */
 .f-hide, .hidden {
   display: none;
 }
 
-/* line 16, ../sass/details.scss */
+/* line 19, ../sass/details.scss */
 .sold-tag {
   position: absolute;
   top: -2px;
@@ -27,7 +32,7 @@
   z-index: 100;
 }
 
-/* line 22, ../sass/details.scss */
+/* line 25, ../sass/details.scss */
 .pic-sliderwrap {
   width: 420px;
   height: 420px;
@@ -37,7 +42,7 @@
   background-color: #f7f7f7;
 }
 
-/* line 30, ../sass/details.scss */
+/* line 33, ../sass/details.scss */
 .show-midpic {
   width: 420px;
   height: 420px;
@@ -45,7 +50,7 @@
   text-align: center;
 }
 
-/* line 36, ../sass/details.scss */
+/* line 39, ../sass/details.scss */
 .icon-a {
   background-image: url(../images/sprites-hash.png);
   background-position: -162px -234px;
@@ -58,7 +63,7 @@
   z-index: 100;
 }
 
-/* line 47, ../sass/details.scss */
+/* line 50, ../sass/details.scss */
 .zoomPad {
   float: left;
   position: relative;
@@ -69,7 +74,7 @@
   overflow: hidden;
 }
 
-/* line 57, ../sass/details.scss */
+/* line 60, ../sass/details.scss */
 .zoomPup {
   overflow: hidden;
   background-color: #fff;
@@ -80,7 +85,7 @@
   z-index: 101;
 }
 
-/* line 67, ../sass/details.scss */
+/* line 70, ../sass/details.scss */
 .zoomWindow {
   position: absolute;
   left: 0;
@@ -90,14 +95,14 @@
   z-index: 110;
 }
 
-/* line 75, ../sass/details.scss */
+/* line 78, ../sass/details.scss */
 .zoomWrapper {
   position: relative;
   z-index: 110;
   margin: 0 auto;
 }
 
-/* line 80, ../sass/details.scss */
+/* line 83, ../sass/details.scss */
 .pic-slider {
   position: relative;
   width: 420px;
@@ -106,13 +111,13 @@
   text-align: center;
 }
 
-/* line 87, ../sass/details.scss */
+/* line 90, ../sass/details.scss */
 .pic-slider-wrap {
   overflow: hidden;
   display: inline-block;
 }
 
-/* line 91, ../sass/details.scss */
+/* line 94, ../sass/details.scss */
 .pic-slider-items {
   width: 62px;
   height: 62px;
@@ -124,27 +129,27 @@
   border: 1px solid #f2f2f2;
   background-color: #f7f7f7;
 }
-/* line 101, ../sass/details.scss */
+/* line 104, ../sass/details.scss */
 .pic-slider-items:hover {
   border: 1px solid #f10180;
 }
 
-/* line 105, ../sass/details.scss */
+/* line 108, ../sass/details.scss */
 .pic-slider-items img {
   z-index: 10;
 }
 
-/* line 108, ../sass/details.scss */
+/* line 111, ../sass/details.scss */
 .pic-slider-items:last-child {
   margin-right: 0;
 }
 
-/* line 111, ../sass/details.scss */
+/* line 114, ../sass/details.scss */
 .M-productInfo {
   overflow: visible;
 }
 
-/* line 114, ../sass/details.scss */
+/* line 117, ../sass/details.scss */
 .M-productInfo {
   float: right;
   width: 550px;
@@ -153,13 +158,13 @@
   min-height: 634px;
 }
 
-/* line 121, ../sass/details.scss */
+/* line 124, ../sass/details.scss */
 .product-content-inner {
   min-height: 538px;
   _height: 536px;
 }
 
-/* line 125, ../sass/details.scss */
+/* line 128, ../sass/details.scss */
 .pib-title-class {
   display: block;
   color: #007cff;
@@ -173,7 +178,7 @@
   min-height: 22px;
 }
 
-/* line 137, ../sass/details.scss */
+/* line 140, ../sass/details.scss */
 .pib-title-detail {
   font-size: 16px;
   color: #333;
@@ -185,7 +190,7 @@
   font-weight: 700;
 }
 
-/* line 147, ../sass/details.scss */
+/* line 150, ../sass/details.scss */
 .goods-description-title {
   font-size: 14px;
   color: #999;
@@ -193,12 +198,12 @@
   overflow: hidden;
 }
 
-/* line 153, ../sass/details.scss */
+/* line 156, ../sass/details.scss */
 .special-price .pi-price-box {
   padding-bottom: 10px;
 }
 
-/* line 156, ../sass/details.scss */
+/* line 159, ../sass/details.scss */
 .pi-price-box {
   background: #f9f9f9;
   margin-bottom: 20px;
@@ -208,7 +213,7 @@
   _padding-left: 0;
 }
 
-/* line 164, ../sass/details.scss */
+/* line 167, ../sass/details.scss */
 .spcecialPrice-box {
   color: #333;
   background-color: #f9f9f9;
@@ -218,12 +223,12 @@
   padding: 0 20px;
 }
 
-/* line 172, ../sass/details.scss */
+/* line 175, ../sass/details.scss */
 .hasSpecialSvip .spcecialPrice-box .sp-info {
   margin-top: 0;
 }
 
-/* line 175, ../sass/details.scss */
+/* line 178, ../sass/details.scss */
 .spcecialPrice-box .sp-info {
   float: left;
   height: 60px;
@@ -232,7 +237,7 @@
   max-width: 339px;
 }
 
-/* line 182, ../sass/details.scss */
+/* line 185, ../sass/details.scss */
 .spcecialPrice-box .sp-title {
   font-size: 14px;
   background: #de3d96;
@@ -247,13 +252,13 @@
   text-overflow: ellipsis;
 }
 
-/* line 195, ../sass/details.scss */
+/* line 198, ../sass/details.scss */
 .special-price .spcecialPrice-box .pbox-yen {
   font-size: 24px;
   float: left;
 }
 
-/* line 199, ../sass/details.scss */
+/* line 202, ../sass/details.scss */
 .spcecialPrice-box .sp-price {
   font-size: 38px;
   font-family: arial;
@@ -264,7 +269,7 @@
   float: left;
 }
 
-/* line 208, ../sass/details.scss */
+/* line 211, ../sass/details.scss */
 .spcecialPrice-box .sp-postfix {
   font-size: 20px;
   color: #333;
@@ -273,7 +278,7 @@
   margin-top: 13px;
 }
 
-/* line 215, ../sass/details.scss */
+/* line 218, ../sass/details.scss */
 .special-price .pbox-market, .special-price .sp-discount {
   padding-left: 10px;
   padding-right: 0;
@@ -283,7 +288,7 @@
   color: #999;
 }
 
-/* line 223, ../sass/details.scss */
+/* line 226, ../sass/details.scss */
 .special-price .pbox-market, .special-price .sp-discount {
   padding-left: 10px;
   padding-right: 0;
@@ -293,13 +298,13 @@
   color: #999;
 }
 
-/* line 231, ../sass/details.scss */
+/* line 234, ../sass/details.scss */
 .spcecialPrice-box .sp-info .pbox-yen {
   margin-top: 13px;
   margin-left: 8px;
 }
 
-/* line 236, ../sass/details.scss */
+/* line 239, ../sass/details.scss */
 #sf {
   width: 50px;
   height: 50px;
@@ -312,7 +317,7 @@
   cursor: move;
 }
 
-/* line 247, ../sass/details.scss */
+/* line 250, ../sass/details.scss */
 #bf {
   width: 400px;
   height: 500px;
@@ -324,9 +329,140 @@
   visibility: hidden;
 }
 
-/* line 258, ../sass/details.scss */
+/* line 261, ../sass/details.scss */
 #bf img {
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+/* line 267, ../sass/details.scss */
+.pi-attr-box {
+  position: relative;
+  z-index: 10;
+}
+/* line 270, ../sass/details.scss */
+.pi-attr-box dt {
+  float: left;
+  font-size: 12px;
+  width: 40px;
+  text-align: left;
+  color: #999;
+  line-height: 32px;
+  overflow: hidden;
+}
+/* line 279, ../sass/details.scss */
+.pi-attr-box dd {
+  float: left;
+}
+
+/* line 283, ../sass/details.scss */
+.cartAdd-form {
+  position: relative;
+  z-index: 5;
+}
+/* line 286, ../sass/details.scss */
+.cartAdd-form span {
+  color: #333;
+  font-size: 12px;
+}
+
+/* line 291, ../sass/details.scss */
+.g-delivery-address {
+  z-index: 20;
+  position: relative;
+}
+
+/* line 295, ../sass/details.scss */
+.i-freight {
+  position: relative;
+  z-index: 14;
+  margin-top: 5px;
+  line-height: 32px;
+}
+
+/* line 301, ../sass/details.scss */
+.i-color {
+  padding-top: 12px;
+  position: relative;
+  z-index: 12;
+  min-height: 40px;
+}
+
+/* line 307, ../sass/details.scss */
+.color-list {
+  width: 500px;
+}
+
+/* line 310, ../sass/details.scss */
+.color-list-item {
+  float: left;
+  height: 32px;
+  _height: 31px;
+  position: relative;
+  margin: 0 10px 9px 0;
+}
+
+/* line 317, ../sass/details.scss */
+.color-list .color-soldOut {
+  background-color: #e5e5e5;
+  color: #666;
+}
+
+/* line 321, ../sass/details.scss */
+.color-list-item a {
+  display: inline-block;
+  height: 28px;
+  max-width: 396px;
+  min-width: 68px;
+  padding: 1px;
+  border: 1px solid #ccc;
+}
+
+/* line 329, ../sass/details.scss */
+.color-pic-wrapper {
+  float: left;
+  width: 28px;
+  height: 28px;
+  background-color: #f7f7f7;
+}
+
+/* line 335, ../sass/details.scss */
+.i-select {
+  background-image: url(../images/sprites-hash.png);
+  background-position: -144px -170px;
+  width: 17px;
+  height: 16px;
+  bottom: -1px;
+  right: -1px;
+}
+
+/* line 343, ../sass/details.scss */
+.pi-attr-box dt {
+  float: left;
+  font-size: 12px;
+  width: 40px;
+  text-align: left;
+  color: #999;
+  line-height: 32px;
+  overflow: hidden;
+}
+
+/* line 352, ../sass/details.scss */
+.color-list .color-selected {
+  padding: 0;
+  border: 2px solid #f43499;
+}
+
+/* line 356, ../sass/details.scss */
+.color-item-name {
+  float: left;
+  text-align: center;
+  max-width: 343px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 15px 0 10px;
+  line-height: 28px;
+  vertical-align: top;
 }
