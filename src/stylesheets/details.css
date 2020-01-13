@@ -63,7 +63,6 @@
   float: left;
   position: relative;
   z-index: 99;
-  cursor: crosshair;
   text-align: center;
   width: 420px;
   height: 420px;
@@ -79,7 +78,6 @@
   position: absolute;
   border: 1px solid #ccc;
   z-index: 101;
-  cursor: crosshair;
 }
 
 /* line 67, ../sass/details.scss */
@@ -299,4 +297,36 @@
 .spcecialPrice-box .sp-info .pbox-yen {
   margin-top: 13px;
   margin-left: 8px;
+}
+
+/* line 236, ../sass/details.scss */
+#sf {
+  width: 50px;
+  height: 50px;
+  background: orange;
+  opacity: 0.3;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+  cursor: move;
+}
+
+/* line 247, ../sass/details.scss */
+#bf {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #000;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  left: 10px;
+  visibility: hidden;
+}
+
+/* line 258, ../sass/details.scss */
+#bf img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }

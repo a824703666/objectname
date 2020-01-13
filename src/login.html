@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>唯品会网站登录</title>
+    <link rel="stylesheet" href="stylesheets/login.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="" class="c-logo-link">
+                    唯品会
+                </a>
+            </div>
+            <div class="c-service"></div>
+        </div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="c-body">
+        <div class="c-content">
+            <div class="login-panel f-right">
+                <div class="login-body">
+                    <div class="tab-box">
+                        <div class="tab-nav">
+                            <div class="tab-nav-item tab-active">
+                                扫码登录
+                            </div>
+                            <div class="tab-nav-item">
+                                账户登录
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-panel-box">
+                                <div class="tab-panel">
+                                    <div class="code-content">
+                                        <img src="images/getQrImage.png" alt="" width="150" height="150">
+                                        <!-- 二维码已失效提示 -->
+                                        <div class="c-qr-mask">
+                                            <div class="tip-text">二维码已失效</div>
+                                            <a href="" class="refresh-btn">点击刷新</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <span></span>
+                                    打开
+                                    <span class="u-text-highlight">唯品会APP-个人中心</span>
+                                    扫一扫登录
+                                </div>
+                            </div>
+                            <div class="tab-panel-box" style="display: none;">
+                                <div class="tab-panel">
+                                    <div class="c-login-form J-password-login-form">
+                                        <div class="m-passport-from">
+                                            <div class="c-form-item  has-form-item-icon  J_item_group">
+                                                <div class="ui-form-item-group">
+                                                    <input type="text" class="ui-input  u-input username" id="J_login_name"
+                                                        placeholder="手机号/用户名/邮箱">
+                                                    <span class="c-icon  c-icon-account  c-icon-form"></span>
+                                                </div>
+                                                <div class="u-input-tip J_form_tip">
+                                                    <span class="text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="c-form-item  has-form-item-icon  J_item_group">
+                                                <div class="ui-form-item-group">
+                                                    <input type="text" class="ui-input  u-input password" id="J_login_name"
+                                                        placeholder="密码">
+                                                    <span class="c-icon  c-icon-account  c-icon-form"></span>
+                                                </div>
+                                                <div class="u-input-tip J_form_tip">
+                                                    <span class="text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="c-form-item">
+                                                <div class="ui-form-item-group  ui-form-item-group-with-gap">
+                                                    <div class="u-other-item">
+                                                        <div class="f-left">
+                                                            <a href="javascript:;"
+                                                                class="c-login-switch  J-switch-to-sms-login">短信验证登录</a>
+                                                        </div>
+                                                        <div class="u-cannot-login J-password-login-forget f-right">
+                                                            <a href="javascript:;" class="i-forget-link">忘记密码</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-form-item-submit">
+                                                <div class="u-form-submit">
+                                                    <button type="button"
+                                                        class="ui-btn-large ui-btn-primary ui-btn-loading u-submit-function login">登录</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                            <!-- 底部多种登录方式 -->
+                            <div class="login-more">
+                                <div class="methods-box">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

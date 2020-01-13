@@ -1,0 +1,404 @@
+@import "compass/reset";
+$spritesImg:url(../images/sprites-hash.png);
+$loginBJ:url(../images/loginBJ.jpg);
+
+// 头部
+.header-inner {
+    position: relative;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 100px;
+    zoom: 1;
+
+    .c-logo-link {
+        background-image: $spritesImg;
+        background-position: -308px -57px;
+        width: 125px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 500px;
+        overflow: hidden;
+    }
+
+    .c-service {
+        background-image: $spritesImg;
+        background-position: 0 0;
+        width: 304px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.f-right {
+    float: right;
+}
+
+.f-left {
+    float: left;
+}
+
+//内容区域
+.c-body {
+    background-image: $loginBJ;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    .c-content {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px 20px;
+        min-height: 550px;
+        width: 1000px;
+    }
+
+    .login-panel {
+        width: 360px;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+
+    .tab-box {
+        width: 360px;
+    }
+
+    // tab样式
+    .tab-nav {
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 0;
+
+        .tab-nav-item {
+            display: inline-block;
+            width: 180px;
+            vertical-align: top;
+            text-align: center;
+            color: #666;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 50px;
+            cursor: pointer;
+            overflow: hidden;
+
+            &:hover {
+                color: #f10180;
+            }
+        }
+
+        .tab-active {
+            color: #f10180;
+            cursor: default;
+        }
+    }
+
+    // 二维码部分样式
+    .tab-panel {
+        padding-top: 36px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        min-height: 192px;
+
+        .code-content {
+            position: absolute;
+            top: 50%;
+            left: 94px;
+            z-index: 2;
+            margin-top: -86px;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border: 1px solid #f0f0f0;
+
+            .c-qr-mask {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                background-color: rgba(255, 255, 255, .8);
+
+                .tip-text {
+                    margin-bottom: 15px;
+                    padding-top: 44px;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                .refresh-btn {
+                    background-color: #f10180;
+                    border: 1px solid #f10180;
+                    min-width: 60px;
+                    padding: 0 19px;
+                    height: 30px;
+                    line-height: 30px;
+                    color: #fff;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-radius: 3px;
+                    text-align: center;
+                    vertical-align: center;
+                    -webkit-transition: .3s;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+.panel-footer {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: center;
+
+    .u-text-highlight {
+        color: #f10180;
+    }
+}
+
+.login-more {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    .methods-box {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+.m-passport-from {
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+
+    .u-input {
+        padding-left: 40px;
+        width: 248px;
+        height: 32px;
+        line-height: 32px;
+
+    }
+}
+
+.ui-form-item-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: none !important;
+    transition: none !important;
+    -webkit-transition-duration: none !important;
+    transition-duration: none !important;
+    opacity: 1 !important;
+}
+
+.ui-input,
+.ui-textarea {
+    padding: 6px 10px;
+    width: 148px;
+    font: 14px/20px tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', sans-serif;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    outline: 0;
+    -webkit-transition: border-color .3s cubic-bezier(.39, .575, .565, 1), background-color .3s cubic-bezier(.39, .575, .565, 1);
+    transition: border-color .3s cubic-bezier(.39, .575, .565, 1), background-color .3s cubic-bezier(.39, .575, .565, 1);
+}
+
+.has-form-item-icon .c-icon-form {
+    position: absolute;
+    top: 13px;
+    left: 11px;
+    z-index: 1;
+}
+
+.c-icon-account {
+    background-image: $spritesImg;
+    background-position: -400px -205px;
+    width: 20px;
+    height: 20px;
+}
+
+.c-icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.u-input-tip {
+    font-size: 12px;
+    color: #ec5042;
+    position: relative;
+    min-height: 19px;
+    max-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    display: block;
+}
+
+.ui-form-item-group-with-gap {
+    padding-bottom: 22px;
+}
+
+.ui-form-item-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: none !important;
+    transition: none !important;
+    -webkit-transition-duration: none !important;
+    transition-duration: none !important;
+    opacity: 1 !important;
+}
+
+.u-other-item {
+    width: 300px;
+    height: 19px;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: #f10180;
+        }
+    }
+
+    .i-forget-link {
+        color: #333;
+        font-size: 12px;
+    }
+}
+
+.c-login-switch {
+    font-size: 14px;
+    color: #333;
+    line-height: 14px;
+}
+
+.ui-btn-loading,
+button.ui-btn-loading {
+    padding: 0;
+    overflow: hidden;
+}
+
+.u-submit-function {
+    width: 300px;
+}
+
+.ui-btn-primary,
+.ui-btn-primary:active,
+.ui-btn-primary:hover,
+.ui-btn1,
+.ui-btn1:active,
+.ui-btn1:hover {
+    color: #fff;
+}
+
+.ui-btn-primary,
+.ui-btn1 {
+    background-color: #f10180;
+    border: 1px solid #f10180;
+}
+
+.ui-btn-big,
+.ui-btn-large {
+    min-width: 72px;
+    _width: 72px;
+    padding: 0 35px;
+    font: 18px/44px tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', sans-serif;
+    _line-height: 48px;
+    height: 44px;
+}
+
+.ui-btn-big,
+.ui-btn-large,
+.ui-btn-medium,
+.ui-btn-mini,
+.ui-btn-nor,
+.ui-btn-small {
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    *white-space: nowrap;
+    _overflow-y: hidden;
+    outline: none;
+}
+
+.control-group .ipt-verify-code {
+    width: 106px;
+    margin-right: 10px;
+}
+
+.control-group .btn-verify-code {
+    padding: 0 12px;
+    width: 106px;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.ui-btn-disable,
+.ui-btn-disable:active,
+.ui-btn-disable:hover,
+.z-ui-btn-loading,
+.z-ui-btn-loading:active,
+.z-ui-btn-loading:hover {
+    border: 1px solid #d0d0d0;
+    color: #999;
+    background: #d0d0d0;
+    cursor: not-allowed;
+}
+
+.c-icon-captcha {
+    background-image: $spritesImg;
+    background-position: -592px -161px;
+    width: 20px;
+    height: 20px;
+}
+
+.tab-content .control-group .ipt-verify-code {
+    width: 106px;
+    margin-right: 10px;
+}
+
+.control-group .ui-input {
+    padding-left: 40px;
+    width: 250px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.c-footer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 78px;
+    line-height: 78px;
+}
+
+.c-copyright {
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+}
