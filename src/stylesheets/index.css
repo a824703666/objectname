@@ -660,62 +660,63 @@ a:hover {
   top: 0px;
   z-index: 3;
   transition: 0.2s;
+  z-index: 20;
 }
-/* line 247, ../sass/index.scss */
+/* line 248, ../sass/index.scss */
 .main-nav .nav-inner {
   width: 1000px;
   margin: 0 auto;
   position: relative;
   clear: both;
 }
-/* line 253, ../sass/index.scss */
-.main-nav .nav-inner .goods-class:hover .menu-list {
-  opacity: 1;
+/* line 254, ../sass/index.scss */
+.main-nav .nav-inner .goods-class:hover .nav-data {
+  display: block;
 }
-/* line 258, ../sass/index.scss */
+/* line 259, ../sass/index.scss */
 .main-nav .nav-inner .nav .goods-class {
   background-color: #f10180;
   width: 156px;
   height: auto;
   margin-right: 16px;
 }
-/* line 263, ../sass/index.scss */
+/* line 264, ../sass/index.scss */
 .main-nav .nav-inner .nav .goods-class a {
   padding: 0;
   color: #fff;
   text-align: center;
 }
-/* line 267, ../sass/index.scss */
+/* line 268, ../sass/index.scss */
 .main-nav .nav-inner .nav .goods-class a:hover {
   background-color: #f10180;
   color: #fff;
 }
-/* line 271, ../sass/index.scss */
+/* line 272, ../sass/index.scss */
 .main-nav .nav-inner .nav .goods-class a img {
   vertical-align: middle;
   margin-top: -3px;
   margin-right: 6px;
 }
-/* line 278, ../sass/index.scss */
+/* line 279, ../sass/index.scss */
 .main-nav .nav-inner .nav li a {
   font-size: 16px;
   color: #333;
   padding: 0 10px;
 }
-/* line 282, ../sass/index.scss */
+/* line 283, ../sass/index.scss */
 .main-nav .nav-inner .nav li a:hover, .main-nav .nav-inner .nav li a:focus {
   background-color: #fff;
   color: #f10180;
 }
-/* line 289, ../sass/index.scss */
+/* line 290, ../sass/index.scss */
 .main-nav .nav-inner .nav-data {
   position: absolute;
   z-index: 2;
   color: #fff;
+  display: none;
 }
-/* line 293, ../sass/index.scss */
+/* line 295, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list {
-  opacity: 0;
   overflow: hidden;
   width: 156px;
   -webkit-transition: 0.2s;
@@ -724,7 +725,7 @@ a:hover {
   padding: 0 0 1px;
   box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.1);
 }
-/* line 302, ../sass/index.scss */
+/* line 303, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li {
   display: block;
   text-align: left;
@@ -735,16 +736,16 @@ a:hover {
   float: none;
   cursor: pointer;
 }
-/* line 311, ../sass/index.scss */
+/* line 312, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li:hover {
   background-color: #fff;
   color: #f10180;
 }
-/* line 314, ../sass/index.scss */
+/* line 315, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li:hover .right-data {
   display: block;
 }
-/* line 318, ../sass/index.scss */
+/* line 319, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data {
   display: none;
   background-color: #fff;
@@ -755,7 +756,7 @@ a:hover {
   height: 495px;
   box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 327, ../sass/index.scss */
+/* line 328, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list {
   position: relative;
   width: 100%;
@@ -763,7 +764,7 @@ a:hover {
   top: 0;
   left: 0;
 }
-/* line 333, ../sass/index.scss */
+/* line 334, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-left {
   float: left;
   width: 519px;
@@ -771,13 +772,13 @@ a:hover {
   max-height: 462px;
   border-top: 1px solid #eee;
 }
-/* line 339, ../sass/index.scss */
+/* line 340, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-left .data-dl {
   margin-bottom: 24px;
   position: relative;
   font-size: 12px;
 }
-/* line 343, ../sass/index.scss */
+/* line 344, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-left .data-dl .title {
   line-height: 22px;
   position: absolute;
@@ -786,13 +787,13 @@ a:hover {
   color: #222;
   overflow: hidden;
 }
-/* line 350, ../sass/index.scss */
+/* line 351, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-left .data-dl .title .gt {
   width: 10px;
   vertical-align: middle;
   float: right;
 }
-/* line 355, ../sass/index.scss */
+/* line 356, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-left .data-dl .title .title-name {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -801,7 +802,7 @@ a:hover {
   width: 72px;
   font-weight: 700;
 }
-/* line 364, ../sass/index.scss */
+/* line 365, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-left .data-dl .dd {
   line-height: 22px;
   width: 425px;
@@ -810,18 +811,18 @@ a:hover {
   *zoom: 1;
   word-break: keep-all;
 }
-/* line 371, ../sass/index.scss */
+/* line 372, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-left .data-dl .dd a {
   color: #666;
   right: 10px;
   font-size: 12px;
 }
-/* line 375, ../sass/index.scss */
+/* line 376, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-left .data-dl .dd a:hover {
   background-color: #fff;
   color: #f10180;
 }
-/* line 384, ../sass/index.scss */
+/* line 385, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-right {
   float: right;
   background-color: #f5f5f5;
@@ -829,14 +830,14 @@ a:hover {
   height: 463px;
   padding: 16px;
 }
-/* line 390, ../sass/index.scss */
+/* line 391, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-right .title {
   font-size: 12px;
   color: #222;
   line-height: 21px;
   margin-bottom: 28px;
 }
-/* line 396, ../sass/index.scss */
+/* line 397, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-right .card {
   width: 68px;
   height: 68px;
@@ -844,7 +845,7 @@ a:hover {
   background: #fff;
   margin-top: -12px;
 }
-/* line 402, ../sass/index.scss */
+/* line 403, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-right .card a {
   display: block;
   width: 68px;
@@ -852,12 +853,12 @@ a:hover {
   position: relative;
   border: 1px solid #fff;
 }
-/* line 408, ../sass/index.scss */
+/* line 409, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-right .card a:hover {
   border: 1px solid #f10180;
   background-color: #fff;
 }
-/* line 412, ../sass/index.scss */
+/* line 413, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-right .card a img {
   height: 24px;
   width: 48px;
@@ -865,7 +866,7 @@ a:hover {
   position: absolute;
   left: 10px;
 }
-/* line 419, ../sass/index.scss */
+/* line 420, ../sass/index.scss */
 .main-nav .nav-inner .nav-data .menu-list li .right-data .pop-list .pop-right .card a span {
   font-size: 12px;
   text-align: center;
@@ -881,20 +882,20 @@ a:hover {
   color: #333;
 }
 
-/* line 444, ../sass/index.scss */
+/* line 445, ../sass/index.scss */
 .banner {
   background-repeat: no-repeat;
   background-position: center top;
   background-image: url(../images/bj.jpg);
 }
-/* line 448, ../sass/index.scss */
+/* line 449, ../sass/index.scss */
 .banner .banner-wrap {
   padding-top: 30px;
   padding-bottom: 20px;
   position: relative;
   margin-bottom: 10px;
 }
-/* line 453, ../sass/index.scss */
+/* line 454, ../sass/index.scss */
 .banner .banner-wrap .content-box {
   padding: 12px;
   padding-bottom: 0;
@@ -905,7 +906,7 @@ a:hover {
   margin: 0 auto;
   box-shadow: 0 1px 3px rgba(167, 167, 167, 0.4);
 }
-/* line 462, ../sass/index.scss */
+/* line 463, ../sass/index.scss */
 .banner .banner-wrap .content-box .banner-content {
   width: 976px;
   border-bottom: none;
@@ -914,17 +915,24 @@ a:hover {
   position: relative;
   overflow: hidden;
 }
-/* line 469, ../sass/index.scss */
+/* line 470, ../sass/index.scss */
 .banner .banner-wrap .content-box .banner-content .swiper-list {
   z-index: 1;
   overflow: hidden;
   height: 340px;
 }
-/* line 474, ../sass/index.scss */
+/* line 475, ../sass/index.scss */
+.banner .banner-wrap .content-box .banner-content li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+/* line 481, ../sass/index.scss */
 .banner .banner-wrap .content-box .banner-content .banner-img {
   height: 340px;
 }
-/* line 479, ../sass/index.scss */
+/* line 486, ../sass/index.scss */
 .banner .banner-wrap .nav-tab {
   text-align: center;
   width: 976px;
@@ -935,22 +943,13 @@ a:hover {
   z-index: 2;
   bottom: 20px;
 }
-/* line 488, ../sass/index.scss */
-.banner .banner-wrap .nav-tab .trigger-line {
-  background-color: #e6057d;
-  position: absolute;
-  bottom: -3px;
-  left: 293px;
-  height: 3px;
-  width: 195px;
-}
-/* line 496, ../sass/index.scss */
+/* line 503, ../sass/index.scss */
 .banner .banner-wrap .nav-tab .tab-icon {
   width: 100%;
   height: 40px;
   text-align: center;
 }
-/* line 500, ../sass/index.scss */
+/* line 507, ../sass/index.scss */
 .banner .banner-wrap .nav-tab .tab-icon .select:after {
   content: "|";
   font-family: tohama;
@@ -960,7 +959,7 @@ a:hover {
   position: absolute;
   right: 0;
 }
-/* line 509, ../sass/index.scss */
+/* line 516, ../sass/index.scss */
 .banner .banner-wrap .nav-tab .tab-icon li {
   display: inline-block;
   width: 195px;
@@ -974,15 +973,19 @@ a:hover {
   border-bottom: transparent 3px solid;
   position: relative;
 }
+/* line 529, ../sass/index.scss */
+.banner .banner-wrap .nav-tab .tab-icon .tabActive {
+  border-bottom: 3px solid #e6057d;
+}
 
-/* line 526, ../sass/index.scss */
+/* line 536, ../sass/index.scss */
 .div2 {
   width: 100%;
   height: 400px;
   background: lightgreen;
 }
 
-/* line 531, ../sass/index.scss */
+/* line 541, ../sass/index.scss */
 .div3 {
   width: 100%;
   height: 250px;
@@ -990,7 +993,7 @@ a:hover {
 }
 
 /* **************底部部分*************************** **/
-/* line 538, ../sass/index.scss */
+/* line 548, ../sass/index.scss */
 #footer {
   margin-top: 500px;
   width: 100%;

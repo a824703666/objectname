@@ -244,14 +244,15 @@ a:hover {
   top: 0px;
   z-index: 3;
   transition: 0.2s;
+  z-index: 20;
   .nav-inner {
     width: 1000px;
     margin: 0 auto;
     position: relative;
     clear: both;
     .goods-class:hover {
-      .menu-list {
-        opacity: 1;
+      .nav-data {
+        display: block;
       }
     }
     .nav {
@@ -290,8 +291,8 @@ a:hover {
       position: absolute;
       z-index: 2;
       color: #fff;
-      .menu-list {
-        opacity: 0;
+      display: none;
+      .menu-list {        
         overflow: hidden;
         width: 156px;
         -webkit-transition: 0.2s;
@@ -471,6 +472,12 @@ a:hover {
           overflow: hidden;
           height: 340px;
         }
+        li{
+          position: absolute;
+          left:0px;
+          top:0px;
+          opacity: 0;
+        }
         .banner-img {
           height: 340px;
         }
@@ -484,15 +491,15 @@ a:hover {
       height: 40px;
       position: absolute;
       z-index: 2;
-      bottom: 20px;
-      .trigger-line {
-        background-color: #e6057d;
-        position: absolute;
-        bottom: -3px;
-        left: 293px;
-        height: 3px;
-        width: 195px;
-      }
+      bottom: 20px;     
+      // .trigger-line {
+      //   background-color: #e6057d;
+      //   position: absolute;
+      //   bottom: -3px;
+      //   left: 293px;
+      //   height: 3px;
+      //   width: 195px;
+      // }
       .tab-icon {
         width: 100%;
         height: 40px;
@@ -517,7 +524,10 @@ a:hover {
           color: #666;
           cursor: pointer;
           border-bottom: transparent 3px solid;
-          position: relative;
+          position: relative;          
+        }
+        .tabActive{
+          border-bottom:3px solid #e6057d;
         }
       }
     }

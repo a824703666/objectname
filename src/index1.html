@@ -121,7 +121,7 @@
       <div class="nav-inner">
         <ul class="nav nav-pills">
           <li class="goods-class" role="presentation">
-            <a href="#">
+            <a href="#" class="hover-style">
               <img src="images/class.png" alt="" />
               商品分类
             </a>
@@ -314,9 +314,14 @@
         <div class="content-box">
           <div class="banner-content">
             <ul class="swiper-list">
-              <li>
+              <li style="opacity: 1;">
                 <a href="">
                   <img class="banner-img" src="images/banner1.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="banner-img" src="images/banner2.jpg" alt="" />
                 </a>
               </li>
             </ul>
@@ -324,11 +329,12 @@
         </div>
         <div class="nav-tab">
           <ul class="tab-icon">
-            <li class="select">水星家纺品牌钜献 抢99元乳胶对枕</li>
+            <li class="tabActive">水星家纺品牌钜献 抢99元乳胶对枕</li>
             <li>年货集市 全场18元起</li>
           </ul>
-          <div class="trigger-line"></div>
+          <!-- <div class="trigger-line"></div> -->
         </div>
+        
       </div>
     </div>
     <!-- 每日必看专区 -->
@@ -518,107 +524,7 @@
       footer
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-      (function($) {
-        $.ajax({
-          url: "http://localhost/objectname/php/louceng.php",
-          dataType: "json"
-        }).done(data => {
-          console.log(data);
-          let strhtml = "";
-          for (let value of data) {
-            strhtml += `
-                    <div class="shop-card">
-            <div class="shop-box">
-              <a href="">
-                <img class="shop-card-img" src="images/${value.src}" alt="" />
-                <div class="info">
-                  <span class="info-name">${value.title}</span>
-                </div>
-                <div class="discount">
-                  <span class="brand-discount">
-                    <span class="sale-count">${value.discount}</span>
-                    折封顶
-                  </span>
-                  <span class="character">|</span>
-                  <div class="sale-detail">
-                    ${value.detail}
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-                    `;
-          }
-
-          $(".shopcard-box1").html(strhtml);
-          $(".shopcard-box2").html(strhtml);
-          $(".shopcard-box3").html(strhtml);
-          $(".shopcard-box4").html(strhtml);
-          $(".shopcard-box5").html(strhtml);
-          $(".shopcard-box6").html(strhtml);
-        });
-      })(jQuery);
-      //1.获取楼梯，给楼梯添加点击事件。
-      $("#fixed-left a").on("click", function() {
-        //$(this).index():当前操作的元素的索引
-        $(this)
-          .addClass("active")
-          .siblings("li")
-          .removeClass("active");
-        let $top = $(".special-sale")
-          .eq($(this).index())
-          .offset().top; //和楼梯对应的楼层的top值。
-        $("html").animate({
-          scrollTop: $top
-        });
-      });
-      //3.触发滚轮，对应的楼梯背景样式发生改变。
-      let $top = $(window).scrollTop();
-      if ($top >= 600) {
-        $("#fixed-left").show();
-        //$('#loutinav').css('display', 'block');
-      } else {
-        $("#fixed-left").hide();
-        //$('#loutinav').css('display', 'none');
-      }
-      $(window).on("scroll", function() {
-        //显示隐藏楼梯
-        $top = $(window).scrollTop();
-        if ($top >= 600) {
-          $("#fixed-left").show();
-          //$('#loutinav').css('display', 'block');
-        } else {
-          $("#fixed-left").hide();
-          //$('#loutinav').css('display', 'none');
-        }
-
-        $(".special-sale").each(function(index, element) {
-          //触发滚轮，遍历一次。
-          //每一个楼层的top值
-          let $loucenttop =
-            $(".special-sale")
-              .eq(index)
-              .offset().top +
-            $(".special-sale")
-              .eq(index)
-              .height() /
-              2;
-          //每一次触发滚轮，用9个楼层的固有top和滚动条的top值进行比较
-          //如果楼层的固有top>滚动条的top  添加active
-          if ($loucenttop > $top) {
-            //上面遍历一次，楼层比较9次，满足一次，立刻结束
-            $("#fixed-left a")
-              .not(".last")
-              .removeClass("active"); //清空所有楼梯的样式。
-            $("#fixed-left a")
-              .not(".last")
-              .eq(index)
-              .addClass("active"); //给符合条件的第一个添加样式。
-            return false; //结束
-          }
-        });
-      });
-    </script>
+    <script src="js/louceng.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
