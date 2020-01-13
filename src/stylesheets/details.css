@@ -201,9 +201,10 @@ a {
 /* line 156, ../sass/details.scss */
 .special-price .pi-price-box {
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-/* line 159, ../sass/details.scss */
+/* line 160, ../sass/details.scss */
 .pi-price-box {
   background: #f9f9f9;
   margin-bottom: 20px;
@@ -213,7 +214,7 @@ a {
   _padding-left: 0;
 }
 
-/* line 167, ../sass/details.scss */
+/* line 168, ../sass/details.scss */
 .spcecialPrice-box {
   color: #333;
   background-color: #f9f9f9;
@@ -223,12 +224,12 @@ a {
   padding: 0 20px;
 }
 
-/* line 175, ../sass/details.scss */
+/* line 176, ../sass/details.scss */
 .hasSpecialSvip .spcecialPrice-box .sp-info {
   margin-top: 0;
 }
 
-/* line 178, ../sass/details.scss */
+/* line 179, ../sass/details.scss */
 .spcecialPrice-box .sp-info {
   float: left;
   height: 60px;
@@ -237,7 +238,7 @@ a {
   max-width: 339px;
 }
 
-/* line 185, ../sass/details.scss */
+/* line 186, ../sass/details.scss */
 .spcecialPrice-box .sp-title {
   font-size: 14px;
   background: #de3d96;
@@ -252,13 +253,13 @@ a {
   text-overflow: ellipsis;
 }
 
-/* line 198, ../sass/details.scss */
+/* line 199, ../sass/details.scss */
 .special-price .spcecialPrice-box .pbox-yen {
   font-size: 24px;
   float: left;
 }
 
-/* line 202, ../sass/details.scss */
+/* line 203, ../sass/details.scss */
 .spcecialPrice-box .sp-price {
   font-size: 38px;
   font-family: arial;
@@ -269,7 +270,7 @@ a {
   float: left;
 }
 
-/* line 211, ../sass/details.scss */
+/* line 212, ../sass/details.scss */
 .spcecialPrice-box .sp-postfix {
   font-size: 20px;
   color: #333;
@@ -278,7 +279,7 @@ a {
   margin-top: 13px;
 }
 
-/* line 218, ../sass/details.scss */
+/* line 219, ../sass/details.scss */
 .special-price .pbox-market, .special-price .sp-discount {
   padding-left: 10px;
   padding-right: 0;
@@ -288,7 +289,7 @@ a {
   color: #999;
 }
 
-/* line 226, ../sass/details.scss */
+/* line 227, ../sass/details.scss */
 .special-price .pbox-market, .special-price .sp-discount {
   padding-left: 10px;
   padding-right: 0;
@@ -298,13 +299,13 @@ a {
   color: #999;
 }
 
-/* line 234, ../sass/details.scss */
+/* line 235, ../sass/details.scss */
 .spcecialPrice-box .sp-info .pbox-yen {
   margin-top: 13px;
   margin-left: 8px;
 }
 
-/* line 239, ../sass/details.scss */
+/* line 240, ../sass/details.scss */
 #sf {
   width: 50px;
   height: 50px;
@@ -317,7 +318,7 @@ a {
   cursor: move;
 }
 
-/* line 250, ../sass/details.scss */
+/* line 251, ../sass/details.scss */
 #bf {
   width: 400px;
   height: 500px;
@@ -329,19 +330,19 @@ a {
   visibility: hidden;
 }
 
-/* line 261, ../sass/details.scss */
+/* line 262, ../sass/details.scss */
 #bf img {
   position: absolute;
   left: 0px;
   top: 0px;
 }
 
-/* line 267, ../sass/details.scss */
+/* line 268, ../sass/details.scss */
 .pi-attr-box {
   position: relative;
   z-index: 10;
 }
-/* line 270, ../sass/details.scss */
+/* line 271, ../sass/details.scss */
 .pi-attr-box dt {
   float: left;
   font-size: 12px;
@@ -351,29 +352,29 @@ a {
   line-height: 32px;
   overflow: hidden;
 }
-/* line 279, ../sass/details.scss */
+/* line 280, ../sass/details.scss */
 .pi-attr-box dd {
   float: left;
 }
 
-/* line 283, ../sass/details.scss */
+/* line 284, ../sass/details.scss */
 .cartAdd-form {
   position: relative;
   z-index: 5;
 }
-/* line 286, ../sass/details.scss */
+/* line 287, ../sass/details.scss */
 .cartAdd-form span {
   color: #333;
   font-size: 12px;
 }
 
-/* line 291, ../sass/details.scss */
+/* line 292, ../sass/details.scss */
 .g-delivery-address {
   z-index: 20;
   position: relative;
 }
 
-/* line 295, ../sass/details.scss */
+/* line 296, ../sass/details.scss */
 .i-freight {
   position: relative;
   z-index: 14;
@@ -381,7 +382,7 @@ a {
   line-height: 32px;
 }
 
-/* line 301, ../sass/details.scss */
+/* line 302, ../sass/details.scss */
 .i-color {
   padding-top: 12px;
   position: relative;
@@ -389,12 +390,12 @@ a {
   min-height: 40px;
 }
 
-/* line 307, ../sass/details.scss */
+/* line 308, ../sass/details.scss */
 .color-list {
   width: 500px;
 }
 
-/* line 310, ../sass/details.scss */
+/* line 311, ../sass/details.scss */
 .color-list-item {
   float: left;
   height: 32px;
@@ -403,13 +404,13 @@ a {
   margin: 0 10px 9px 0;
 }
 
-/* line 317, ../sass/details.scss */
+/* line 318, ../sass/details.scss */
 .color-list .color-soldOut {
   background-color: #e5e5e5;
   color: #666;
 }
 
-/* line 321, ../sass/details.scss */
+/* line 322, ../sass/details.scss */
 .color-list-item a {
   display: inline-block;
   height: 28px;
@@ -419,7 +420,7 @@ a {
   border: 1px solid #ccc;
 }
 
-/* line 329, ../sass/details.scss */
+/* line 330, ../sass/details.scss */
 .color-pic-wrapper {
   float: left;
   width: 28px;
@@ -427,7 +428,7 @@ a {
   background-color: #f7f7f7;
 }
 
-/* line 335, ../sass/details.scss */
+/* line 336, ../sass/details.scss */
 .i-select {
   background-image: url(../images/sprites-hash.png);
   background-position: -144px -170px;
@@ -437,7 +438,7 @@ a {
   right: -1px;
 }
 
-/* line 343, ../sass/details.scss */
+/* line 344, ../sass/details.scss */
 .pi-attr-box dt {
   float: left;
   font-size: 12px;
@@ -448,13 +449,20 @@ a {
   overflow: hidden;
 }
 
-/* line 352, ../sass/details.scss */
+/* line 353, ../sass/details.scss */
 .color-list .color-selected {
   padding: 0;
   border: 2px solid #f43499;
 }
 
-/* line 356, ../sass/details.scss */
+/* line 357, ../sass/details.scss */
+.pib-title {
+  color: #4d4d4d;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+/* line 362, ../sass/details.scss */
 .color-item-name {
   float: left;
   text-align: center;
@@ -465,4 +473,141 @@ a {
   padding: 0 15px 0 10px;
   line-height: 28px;
   vertical-align: top;
+}
+
+/* line 373, ../sass/details.scss */
+.num-box {
+  position: relative;
+  height: 28px;
+  border: 1px solid #b3b3b3;
+}
+
+/* line 378, ../sass/details.scss */
+.ui-quantity {
+  display: inline-block;
+  width: 73px;
+  height: 28px;
+  background-color: #fff;
+  border: 1px solid #e3e2e2;
+  color: #333;
+  vertical-align: top;
+  text-align: center;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+/* line 390, ../sass/details.scss */
+.num-box .num-add, .num-box .num-input, .num-box .num-reduce {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+
+/* line 395, ../sass/details.scss */
+.ui-quantity .z-disable, .ui-quantity .z-disable:active, .ui-quantity .z-disable:hover {
+  background-color: #f9f8f8;
+  color: #dad8d8;
+}
+
+/* line 399, ../sass/details.scss */
+.ui-quantity .z-disable {
+  cursor: not-allowed;
+}
+
+/* line 402, ../sass/details.scss */
+.vipFont {
+  font-family: vipFont;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 412, ../sass/details.scss */
+.ui-quantity .amount {
+  float: left;
+  width: 29px;
+  height: 100%;
+  line-height: 28px;
+  font-size: 12px;
+  border-left: 1px solid #e4e3e3;
+  border-right: 1px solid #e4e3e3;
+  overflow: hidden;
+}
+
+/* line 422, ../sass/details.scss */
+.ui-quantity a {
+  float: left;
+  width: 21px;
+  height: 100%;
+  line-height: 28px;
+  font-size: 15px;
+  color: #7d7c7c;
+  background-color: #f9f8f8;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+/* line 433, ../sass/details.scss */
+.i-button {
+  _height: 35px;
+  margin-bottom: 12px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+/* line 439, ../sass/details.scss */
+.button-box {
+  height: 46px;
+  margin-right: 20px;
+  position: relative;
+}
+
+/* line 444, ../sass/details.scss */
+.button-box .ui-btn-large {
+  width: 198px;
+}
+
+/* line 447, ../sass/details.scss */
+.ui-btn-loading, button.ui-btn-loading {
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 451, ../sass/details.scss */
+button.ui-btn-big, button.ui-btn-large {
+  height: 46px;
+}
+
+/* line 454, ../sass/details.scss */
+.ui-btn-primary, .ui-btn1 {
+  background-color: #f10180;
+  border: 1px solid #f10180;
+}
+
+/* line 458, ../sass/details.scss */
+.ui-btn-big, .ui-btn-large, .ui-btn-medium, .ui-btn-mini, .ui-btn-nor, .ui-btn-small {
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  _overflow-y: hidden;
+  color: #fff;
+}
+
+/* line 470, ../sass/details.scss */
+.ui-btn-big, .ui-btn-large {
+  min-width: 72px;
+  _width: 72px;
+  padding: 0 35px;
+  font: 18px/44px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+  _line-height: 48px;
+  height: 44px;
 }

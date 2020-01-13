@@ -80,7 +80,7 @@ body {
 }
 /* line 17, ../sass/login.scss */
 .header-inner .c-logo-link {
-  background-image: url(../images/sprites-hash.png);
+  background-image: url(../images/sprites-hash1.png);
   background-position: -308px -57px;
   width: 125px;
   height: 100px;
@@ -91,7 +91,7 @@ body {
 }
 /* line 28, ../sass/login.scss */
 .header-inner .c-service {
-  background-image: url(../images/sprites-hash.png);
+  background-image: url(../images/sprites-hash1.png);
   background-position: 0 0;
   width: 304px;
   height: 100px;
@@ -298,7 +298,7 @@ body {
 
 /* line 230, ../sass/login.scss */
 .c-icon-account {
-  background-image: url(../images/sprites-hash.png);
+  background-image: url(../images/sprites-hash1.png);
   background-position: -400px -205px;
   width: 20px;
   height: 20px;
@@ -459,7 +459,7 @@ button.ui-btn-loading {
 
 /* line 375, ../sass/login.scss */
 .c-icon-captcha {
-  background-image: url(../images/sprites-hash.png);
+  background-image: url(../images/sprites-hash1.png);
   background-position: -592px -161px;
   width: 20px;
   height: 20px;
