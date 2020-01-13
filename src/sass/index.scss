@@ -32,12 +32,15 @@ $colors:(a:#ffa, b:#acc);
 @import "compass/reset";
 $height-color: #f10180;
 @import "louceng";
+
 .leftStyle {
   float: left;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 .clearfix:after {
   content: "";
   display: "block";
@@ -46,17 +49,20 @@ a:hover {
   visibility: hidden;
   clear: both;
 }
+
 #top {
   width: 100%;
   height: 30px;
   background: #f5f5f5;
   color: #777;
   font-size: 12px;
+
   .center {
     width: 1000px;
     margin: 0 auto;
     height: 100%;
     line-height: 30px;
+
     .city {
       // width: 46px;
       height: 27px;
@@ -71,63 +77,80 @@ a:hover {
       border-color: #f5f5f5;
       color: #333;
     }
+
     .iconfont {
       font-size: 9px;
       color: #999;
     }
+
     .list {
       float: right;
+
       a {
         color: #666;
       }
     }
+
     .breadcrumb {
       padding: 0;
       margin-bottom: 0;
+
       li {
         margin-right: 15px;
         cursor: pointer;
       }
+
       span {
         display: inline-block;
         height: 9px;
       }
+
       img {
         vertical-align: text-bottom;
       }
     }
   }
 }
+
 .nav-position {
   position: relative;
+
   &:hover {
     .dropdown-menu {
       display: block;
     }
   }
+
   .dropdown-menu {
     min-width: 100px;
     text-align: center;
+
     li {
       margin-right: 0 !important;
     }
   }
 }
+
 .iconfont {
   font-size: 9px;
 }
+
 .nav-tool {
   float: right;
+
   li {
     float: left;
   }
 }
+
 #nav {
   width: 100%;
   height: 100px;
+
   .nav-center {
     width: 1000px;
     margin: 0 auto;
+
     .logo-box {
       position: relative;
       float: left;
@@ -135,21 +158,25 @@ a:hover {
       margin-right: 1px;
       min-width: 140px;
       height: 100px;
+
       .img-wrap {
         margin-left: -20px;
         min-width: 160px;
         overflow: hidden;
+
         img {
           border: 0 none;
           vertical-align: top;
         }
       }
     }
+
     .vip-tip {
       position: relative;
       z-index: 1;
       width: 304px;
       height: 100px;
+
       .service-link {
         display: block;
         position: relative;
@@ -158,6 +185,7 @@ a:hover {
         height: 100px;
         float: left;
       }
+
       img {
         position: absolute;
         top: 0;
@@ -165,17 +193,20 @@ a:hover {
         z-index: 1;
       }
     }
+
     .service-search {
       width: 391px;
       height: 32px;
       margin-top: 33px;
       margin-left: 50px;
+
       .search-input {
         width: 330px;
         border-radius: 0;
         border: 2px solid #fa2a83;
         border-right: 0;
       }
+
       .input-group-btn {
         width: 53px;
         height: 34px;
@@ -186,17 +217,20 @@ a:hover {
         font-size: 16px;
         color: #fff;
       }
+
       .hotWords {
         .breadcrumb {
           padding-left: 0;
           background-color: #fff;
         }
+
         a {
           font-size: 12px;
           color: #999;
         }
       }
     }
+
     .header-cart {
       position: relative;
       z-index: 9;
@@ -204,6 +238,7 @@ a:hover {
       margin-top: 33px;
       margin-left: 15px;
       width: 96px;
+
       .cart-tool {
         position: relative;
         z-index: 1;
@@ -215,6 +250,7 @@ a:hover {
         border: 1px solid #ccc;
         background-color: #f6f7f9;
         border-radius: 2px;
+
         .ico-bag {
           background-image: url(../images/sprites-hash.png);
           background-position: -114px -208px;
@@ -225,6 +261,7 @@ a:hover {
           left: 8px;
           z-index: 1;
         }
+
         span {
           font-size: 12px;
           color: #333;
@@ -233,6 +270,7 @@ a:hover {
     }
   }
 }
+
 // 顶部固定部分
 .main-nav {
   height: 43px;
@@ -245,30 +283,36 @@ a:hover {
   z-index: 3;
   transition: 0.2s;
   z-index: 20;
+
   .nav-inner {
     width: 1000px;
     margin: 0 auto;
     position: relative;
     clear: both;
+
     .goods-class:hover {
       .nav-data {
         display: block;
       }
     }
+
     .nav {
       .goods-class {
         background-color: $height-color;
         width: 156px;
         height: auto;
         margin-right: 16px;
+
         a {
           padding: 0;
           color: #fff;
           text-align: center;
+
           &:hover {
             background-color: $height-color;
             color: #fff;
           }
+
           img {
             vertical-align: middle;
             margin-top: -3px;
@@ -276,10 +320,12 @@ a:hover {
           }
         }
       }
+
       li a {
         font-size: 16px;
         color: #333;
         padding: 0 10px;
+
         &:hover,
         &:focus {
           background-color: #fff;
@@ -287,19 +333,21 @@ a:hover {
         }
       }
     }
+
     .nav-data {
       position: absolute;
       z-index: 2;
       color: #fff;
       display: none;
-      .menu-list {        
+
+      .menu-list {
         overflow: hidden;
         width: 156px;
-        -webkit-transition: 0.2s;
         transition: 0.2s;
         background-color: #f10180;
         padding: 0 0 1px;
         box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.1);
+
         li {
           display: block;
           text-align: left;
@@ -309,13 +357,16 @@ a:hover {
           line-height: 45px;
           float: none;
           cursor: pointer;
+
           &:hover {
             background-color: #fff;
             color: $height-color;
+
             .right-data {
               display: block;
             }
           }
+
           .right-data {
             display: none;
             background-color: #fff;
@@ -325,22 +376,26 @@ a:hover {
             width: 844px;
             height: 495px;
             box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+
             .pop-list {
               position: relative;
               width: 100%;
               height: 100%;
               top: 0;
               left: 0;
+
               .pop-left {
                 float: left;
                 width: 519px;
                 padding: 16px 40px 16px 40px;
                 max-height: 462px;
                 border-top: 1px solid #eee;
+
                 .data-dl {
                   margin-bottom: 24px;
                   position: relative;
                   font-size: 12px;
+
                   .title {
                     line-height: 22px;
                     position: absolute;
@@ -348,11 +403,13 @@ a:hover {
                     width: 83px;
                     color: #222;
                     overflow: hidden;
+
                     .gt {
                       width: 10px;
                       vertical-align: middle;
                       float: right;
                     }
+
                     .title-name {
                       overflow: hidden;
                       text-overflow: ellipsis;
@@ -362,6 +419,7 @@ a:hover {
                       font-weight: 700;
                     }
                   }
+
                   .dd {
                     line-height: 22px;
                     width: 425px;
@@ -369,10 +427,12 @@ a:hover {
                     overflow: hidden;
                     *zoom: 1;
                     word-break: keep-all;
+
                     a {
                       color: #666;
                       right: 10px;
                       font-size: 12px;
+
                       &:hover {
                         background-color: #fff;
                         color: $height-color;
@@ -381,6 +441,7 @@ a:hover {
                   }
                 }
               }
+
               //   二级菜单右侧部分内容
               .pop-right {
                 float: right;
@@ -388,28 +449,33 @@ a:hover {
                 width: 213px;
                 height: 463px;
                 padding: 16px;
+
                 .title {
                   font-size: 12px;
                   color: #222;
                   line-height: 21px;
                   margin-bottom: 28px;
                 }
+
                 .card {
                   width: 68px;
                   height: 68px;
                   display: inline-block;
                   background: #fff;
                   margin-top: -12px;
+
                   a {
                     display: block;
                     width: 68px;
                     height: 68px;
                     position: relative;
                     border: 1px solid #fff;
+
                     &:hover {
                       border: 1px solid $height-color;
                       background-color: #fff;
                     }
+
                     img {
                       height: 24px;
                       width: 48px;
@@ -417,6 +483,7 @@ a:hover {
                       position: absolute;
                       left: 10px;
                     }
+
                     span {
                       font-size: 12px;
                       text-align: center;
@@ -441,16 +508,19 @@ a:hover {
     }
   }
 }
+
 // 轮播
 .banner {
   background-repeat: no-repeat;
   background-position: center top;
   background-image: url(../images/bj.jpg);
+
   .banner-wrap {
     padding-top: 30px;
     padding-bottom: 20px;
     position: relative;
     margin-bottom: 10px;
+
     .content-box {
       padding: 12px;
       padding-bottom: 0;
@@ -460,6 +530,7 @@ a:hover {
       position: relative;
       margin: 0 auto;
       box-shadow: 0 1px 3px rgba(167, 167, 167, 0.4);
+
       .banner-content {
         width: 976px;
         border-bottom: none;
@@ -467,22 +538,26 @@ a:hover {
         margin: 0 auto;
         position: relative;
         overflow: hidden;
+
         .swiper-list {
           z-index: 1;
           overflow: hidden;
           height: 340px;
         }
-        li{
+
+        li {
           position: absolute;
-          left:0px;
-          top:0px;
+          left: 0px;
+          top: 0px;
           opacity: 0;
         }
+
         .banner-img {
           height: 340px;
         }
       }
     }
+
     .nav-tab {
       text-align: center;
       width: 976px;
@@ -491,7 +566,8 @@ a:hover {
       height: 40px;
       position: absolute;
       z-index: 2;
-      bottom: 20px;     
+      bottom: 20px;
+
       // .trigger-line {
       //   background-color: #e6057d;
       //   position: absolute;
@@ -504,6 +580,7 @@ a:hover {
         width: 100%;
         height: 40px;
         text-align: center;
+
         .select:after {
           content: "|";
           font-family: tohama;
@@ -513,6 +590,7 @@ a:hover {
           position: absolute;
           right: 0;
         }
+
         li {
           display: inline-block;
           width: 195px;
@@ -524,20 +602,23 @@ a:hover {
           color: #666;
           cursor: pointer;
           border-bottom: transparent 3px solid;
-          position: relative;          
+          position: relative;
         }
-        .tabActive{
-          border-bottom:3px solid #e6057d;
+
+        .tabActive {
+          border-bottom: 3px solid #e6057d;
         }
       }
     }
   }
 }
+
 .div2 {
   width: 100%;
   height: 400px;
   background: lightgreen;
 }
+
 .div3 {
   width: 100%;
   height: 250px;
