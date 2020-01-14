@@ -1,39 +1,60 @@
-!function ($) {
-    // tab切换
-    var tabNav = $(".tab-nav-item");
-    var tabContent = $(".tab-panel-box");
+!(function($) {
+  // tab切换
+  var tabNav = $(".tab-nav-item");
+  var tabContent = $(".tab-panel-box");
 
-    function tabFun(tab, tabContent) {
-        for (var i = 0; i < tab.length; i++) {
-            tab[i].index = i;
-            tab[i].onclick = function () {
-                for (var j = 0; j < tab.length; j++) {
-                    tab[j].classList.remove("tab-active")
-                    tabContent[j].style.display = "none";
-                    tab[this.index].classList.add("tab-active");
-                    tabContent[this.index].style.display = "block";
-                }
-            }
+  function tabFun(tab, tabContent) {
+    for (var i = 0; i < tab.length; i++) {
+      tab[i].index = i;
+      tab[i].onclick = function() {
+        for (var j = 0; j < tab.length; j++) {
+          tab[j].classList.remove("tab-active");
+          tabContent[j].style.display = "none";
+          tab[this.index].classList.add("tab-active");
+          tabContent[this.index].style.display = "block";
         }
+      };
     }
-    tabFun(tabNav, tabContent);
-    //登录
-    $('.login').on('click', function () {
-        $.ajax({
-            type: 'post',
-            url: 'http://10.31.152.56/JS1912/Day%2030-31/loginregistry/php/login.php',
-            data: {
-                user: $('.username').val(),
-                pass: $('.password').val()
-            }
-        }).done(function (result) {
-            if (result) {
-                history.go(-1);
-                localStorage.setItem('username', $('.username').val());
-            } else {
-                $('.password').val('');
-                alert('用户名或者密码错误');
-            }
-        });
+  }
+  tabFun(tabNav, tabContent);
+  $(".username").blur(function(e) {
+    e.preventDefault();
+    if ($(".username").val() == "") {
+      $(".name-text span").html("请输入登录名");
+    } else {
+      $(".name-text span").html("");
+    }
+  });
+  $(".password").blur(function(e) {
+    e.preventDefault();
+    if ($(".password").val() == "") {
+      $(".password-text span").html("请输入密码");
+    } else {
+      $(".password-text span").html("");
+    }
+  });
+  //登录
+  $(".u-submit-function").on("click", function() {
+    if ($(".username").val() == "" && $(".password").val() == "") {
+      $(".name-text span").html("请输入登录名");
+      $(".password-text span").html("请输入密码");
+      return false;
+    }
+    $.ajax({
+      type: "post",
+      url: "http://localhost/objectname/php/loginconn.php",
+      data: {
+        user: $(".username").val(),
+        pass: hex_sha1($(".password").val())
+      }
+    }).done(function(result) {
+      console.log(result);
+      if (result) {
+        history.go(-1);
+        localStorage.setItem("username", $(".username").val());
+      } else {
+        $('.error-text span').html("用户名或者密码错误");
+      }
     });
-}(jQuery)
+  });
+})(jQuery);

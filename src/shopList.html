@@ -45,7 +45,7 @@
     <script>
     (function($) {
         $.ajax({
-          url: "http://localhost/objectname/php/cart.php",
+          url: "http://localhost/objectname/php/vipcart.php",
           dataType: "json"
         }).done(data => {
           console.log(data);
@@ -55,8 +55,8 @@
             <div class="goods-card">
                     <div class="content">
                         <div class="goods-img">
-                            <a href="details.html">
-                                <img src="images/${value.src}" width="235" height="297" alt="">
+                            <a href="details.html?sid=${value.sid}">
+                                <img src="${value.url}" width="235" height="297" alt="">
                                
                         <div class="hot-tip"></div>
                             </a>
@@ -70,8 +70,8 @@
                         </div>
                     </div>
                     <div class="goods-footer">
-                        <del class="origin-price">￥${value.del}</del>
-                        <span class="goods-discount">${value.discount}折</span>
+                        <del class="origin-price">￥2000.00</del>
+                        <span class="goods-discount">1.2折</span>
                     </div>
                     <h4 class="goods-title-info">
                         <a href="">${value.title}</a>

@@ -8,33 +8,35 @@
             this.bpic = $('#bpic');
             this.sf = $('#sf');
             this.bf = $('#bf');
-            this.list = $('#list');
-            this.list_ul = $('#list ul');
+            this.list_ul = $('#J-sImg-wrap');
             this.count = $('#count');
         }
 
         init() {
             //将接收的sid传给后端。
-            // $.ajax({
-            //     url: 'http://10.31.152.56/JS1912/Day%2030-31/taobaocart/php/getsid.php',
-            //     data: {
-            //         sid: this.sid
-            //     },
-            //     dataType: 'json'
-            // }).done((objdata) => {
-            //     $('#spic img').attr('src', objdata.url);
-            //     $('.loadtitle').html(objdata.title);
-            //     $('.loadpcp').html(objdata.price);
+            $.ajax({
+                url: 'http://localhost/objectname/php/vipgitsid.php',
+                data: {
+                    sid: this.sid
+                },
+                dataType: 'json'
+            }).done((objdata) => {
+                $('#spic img').attr('src', objdata.url);
+                $('.J_brandName,.pib-title-detail').html(objdata.title);
+                $('.sp-price').html(objdata.price);
+                let piclist = objdata.urls.split(',');
+                let $strhtml = '';
+                $.each(piclist, function (index, value) {
+                    $strhtml += `
+                    <div class="pic-slider-items J-picSlider-items pic-slider-cur" data-index="0">
+                                    <img src="${value}" alt="" width="62" class="J-mer-smallImg">
+                                </div>
+                                `;
+                });
 
-            //     let piclist = objdata.urls.split(',');
-            //     let $strhtml = '';
-            //     $.each(piclist, function (index, value) {
-            //         $strhtml += `<li><img src="${value}" /></li>`;
-            //     });
+                this.list_ul.html($strhtml)
 
-            //     this.list_ul.html($strhtml)
-
-            // });
+            });
             this.valuechange();
             //执行添加购物车操作
             this.addcart();
@@ -72,7 +74,8 @@
                     goodsid = localStorage.getItem('cartsid').split(',');
                 }
             }
-            $('.p-btn a').on('click', () => {
+            $('.cart-btn').on('click', () => {
+                alert('添加成功')
                 getcookie();
                 if ($.inArray(this.sid, goodsid) === -1) { //第一次点击,将sid传入，取到数量直接传入
                     goodsid.push(this.sid);
