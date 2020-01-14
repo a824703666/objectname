@@ -23,25 +23,26 @@
         //2.渲染一条数据的方法
         render(sid, num) { //sid:当前渲染的购物车列表的编号，num:数量。
 
-            // $.ajax({
-            //     url: 'http://10.31.152.56/JS1912/Day%2030-31/taobaocart/php/taobaodata.php',
-            //     dataType: 'json'
-            // }).done((data) => {
-            //     $.each(data, (index, value) => {
-            //         if (sid == value.sid) {
-            //             let $clonebox = $('.goods-item:hidden').clone(true, true);
-            //             $clonebox.find('.goods-pic img').attr('src', value.url);
-            //             $clonebox.find('.goods-pic img').attr('sid', value.sid);
-            //             $clonebox.find('.goods-d-info a').html(value.title);
-            //             $clonebox.find('.b-price strong').html(value.price);
-            //             $clonebox.find('.quantity-form input').val(num);
-            //             $clonebox.find('.b-sum strong').html((value.price * num).toFixed(2));
-            //             $clonebox.show();
-            //             $('.item-list').append($clonebox);
-            //             this.allprice();
-            //         }
-            //     });
-            // });
+            $.ajax({
+                url: 'http://localhost/objectname/php/vipcart.php',
+                dataType: 'json'
+            }).done((data) => {
+                $.each(data, (index, value) => {
+                    if (sid == value.sid) {
+                        console.log(value.url)
+                        let $clonebox = $('.J_goods_item').clone(true, true);
+                        $clonebox.find('.img-url').attr('src', value.url); 
+                        $clonebox.find('.J_goods_item img').attr('sid', value.sid);                       
+                        $clonebox.find('.product-title a').html(value.title);
+                        $clonebox.find('.b-price').html(value.price);
+                        $clonebox.find('.amount-num input').val(num);
+                        $clonebox.find('.subtotal-price strong').html((value.price * num).toFixed(2));
+                        $clonebox.show();
+                        $('.orders-table tbody').append($clonebox);
+                        this.allprice();
+                    }
+                });
+            });
         }
 
         //计算总价
@@ -63,7 +64,7 @@
                 $num++;
                 $(this).prev().find('input').val($num);
                 $(this).parents('.J_goods_item').find('.subtotal-item strong').html(singleprice($(this))); //求单个总价
-                local($(this).parents('.goods-info').find('.goods-pic img').attr('sid'), $num); //存储数量
+                local($(this).parents('.J_goods_item').find('img').attr('sid'), $num); //存储数量
             });
             //--
             $('.quantity-down').on('click', function () {
@@ -74,7 +75,7 @@
                 }
                 $(this).next().find('input').val($num);
                 $(this).parents('.J_goods_item').find('.subtotal-item strong').html(singleprice($(this)));
-                local($(this).parents('.J_goods_item').find('.goods-pic img').attr('sid'), $num);
+                local($(this).parents('.J_goods_item').find('img').attr('sid'), $num);
             });
             //直接输入
             $('.amount-num input').on('input', function () {
@@ -90,7 +91,7 @@
                     $(this).val(1);
                 }
                 $(this).parents('.J_goods_item').find('.subtotal-item strong').html(singleprice($(this)));
-                local($(this).parents('.J_goods_item').find('.goods-pic img').attr('sid'), $(this).val());
+                local($(this).parents('.J_goods_item').find('img').attr('sid'), $(this).val());
             });
             //封装计算单价
             function singleprice(obj) {
