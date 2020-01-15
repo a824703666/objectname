@@ -20,7 +20,7 @@
             //删除调用
             this.delgoods();
         }
-        //2.渲染一条数据的方法
+        //2.渲染一条数据的方法，封装函数
         render(sid, num) { //sid:当前渲染的购物车列表的编号，num:数量。
 
             $.ajax({
@@ -153,18 +153,18 @@
 
 
             //删除选中
-            $('.operation a').on('click', function () {
-                getstorage(); //取出本地存储，转换成数组。
-                if (window.confirm('你确定要删除吗?')) {
-                    $('.goods-item:visible').each(function (index, element) {
-                        if ($(this).find('input:checkbox').is(':checked')) {
-                            $(this).remove();
-                        }
-                        delstorage($(this).find('.goods-pic img').attr('sid'), arrsid);
-                    });
-                }
-                _this.allprice();
-            });
+            // $('.operation a').on('click', function () {
+            //     getstorage(); //取出本地存储，转换成数组。
+            //     if (window.confirm('你确定要删除吗?')) {
+            //         $('.goods-item:visible').each(function (index, element) {
+            //             if ($(this).find('input:checkbox').is(':checked')) {
+            //                 $(this).remove();
+            //             }
+            //             delstorage($(this).find('.goods-pic img').attr('sid'), arrsid);
+            //         });
+            //     }
+            //     _this.allprice();
+            // });
         }
 
 
