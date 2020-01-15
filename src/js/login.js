@@ -13,9 +13,9 @@
           tab[i].onclick = function () {
             for (var j = 0; j < tab.length; j++) {
               tab[j].classList.remove("tab-active");
-              this.tabContent[j].style.display = "none";
+              tabContent[j].style.display = "none";
               tab[this.index].classList.add("tab-active");
-              this.tabContent[this.index].style.display = "block";
+              tabContent[this.index].style.display = "block";
             }
           };
         }
