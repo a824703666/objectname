@@ -885,7 +885,7 @@ a:hover {
 .banner {
   background-repeat: no-repeat;
   background-position: center top;
-  background-image: url(../images/bj.jpg);
+  background-image: url(../images/bj.png);
 }
 /* line 518, ../sass/index.scss */
 .banner .banner-wrap {

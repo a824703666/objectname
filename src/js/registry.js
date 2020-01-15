@@ -9,7 +9,7 @@
         }else{
             $.ajax({
                 type: 'post',
-                url: 'http://localhost/objectname/php/login.php',
+                url: 'http://localhost/objectname/php/registry.php',
                 data: {
                     username: $user.val()
                 }

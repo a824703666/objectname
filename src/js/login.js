@@ -42,7 +42,7 @@
     }
     $.ajax({
       type: "post",
-      url: "http://localhost/objectname/php/loginconn.php",
+      url: "http://localhost/objectname/php/login.php",
       data: {
         user: $(".username").val(),
         pass: hex_sha1($(".password").val())
