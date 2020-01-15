@@ -1,3 +1,26 @@
+/******************右边fixed部分 */
+#fixed{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    width: 36px;
+    height: 100%;
+    background-color:#262626;
+    .cart{
+      color: #fff;
+      background-color: #df147f;
+      font-size: 14px;
+      padding: 0 11px;
+      margin-top:125px;
+    }
+    a {
+      color: #fff;
+      display: block;
+      padding: 8px 0;
+    }
+}
+
 a {
     text-decoration: none;
 }

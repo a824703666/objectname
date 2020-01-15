@@ -625,11 +625,34 @@ a:hover {
   background: lightsalmon;
 }
 
+/******************右边fixed部分 */
+#fixed{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    width: 36px;
+    height: 100%;
+    background-color:#262626;
+    .cart{
+      color: #fff;
+      background-color: #df147f;
+      font-size: 14px;
+      padding: 0 11px;
+      margin-top:125px;
+    }
+    a {
+      color: #fff;
+      display: block;
+      padding: 8px 0;
+    }
+}
+
 /* **************底部部分*************************** **/
 #footer {
-  margin-top: 500px;
+  // margin-top: 500px;
   width: 100%;
-  height: 200px;
+  // height: 200px;
   // display: block;
   clear: both;
   // overflow: hidden;
@@ -638,4 +661,41 @@ a:hover {
   border-top: 1px solid #ebebeb;
   background-color: #fcfcfc;
   color: #4d4d4d;
+
+  .footer {
+    width: 960px;
+    height: 120px;
+    margin: 0 auto;
+    // background-color: #ccc;
+  }
+
+  .footer-ul {
+    width: 100%;
+
+    li {
+      float: left;
+      width: 96px;
+      height: 105px;
+      line-height: 105px;
+      text-align: center;
+      color: rgb(80, 77, 77);
+      font-weight: bold;
+    }
+  }
+  .footer-bottom{
+    width: 960px;
+    height: 30px;
+    background-color: #D7237E;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    a {
+      margin-left: 2px;
+      margin-right: 2px;
+      color: #fff;
+      text-decoration: none;
+  }
+  }
 }
