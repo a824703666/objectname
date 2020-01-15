@@ -1,36 +1,49 @@
 // 轮播
-(function($) {
-    var $banner = $('.banner-content');
-    var $bannerli = $('.banner-content ul li');
-    var $btnli = $('.nav-tab ul li');
-    var num = 0; 
-    var timer=null;
-    var $piclilength = $bannerli.size();
-    $btnli.on('click', function() {
-        num = $(this).index();
-        tabswitch();
-    });
-    function tabswitch() {
-        $btnli.eq(num).addClass('tabActive').siblings().removeClass('tabActive');
-        $bannerli.eq(num).animate({ opacity: 1 }).siblings($bannerli).animate({ opacity: 0 });
-    }
-    timer = setInterval(function() {
-        num++;
-        if (num > $piclilength - 1) {
-            num = 0;
+;
+(function ($) {
+    class Index {
+        constructor() {
+            this.$banner = $('.banner-content');
+            this.$bannerli = $('.banner-content ul li');
+            this.$btnli = $('.nav-tab ul li');
+            this.num = 0;
+            this.timer = null;
+            this.$piclilength = this.$bannerli.size();
         }
-        tabswitch();
-    }, 6000);
+        init() {
+            this.$btnli.on('click', () => {
+                this.num = $(this).index();
+                tabswitch();
+            });
 
-    $banner.hover(function() {
-        clearInterval(timer);
-    }, function() {
-        timer = setInterval(function() {
-            num++;
-            if (num > $piclilength - 1) {
-                num = 0;
+            function tabswitch() {
+                this.$btnli.eq(this.num).addClass('tabActive').siblings().removeClass('tabActive');
+                this.$bannerli.eq(this.num).animate({
+                    opacity: 1
+                }).siblings(this.$bannerli).animate({
+                    opacity: 0
+                });
             }
-            tabswitch();
-        }, 6000);
-    });
+            this.timer = setInterval(() => {
+                this.num++;
+                if (this.num > this.$piclilength - 1) {
+                    this.num = 0;
+                }
+                tabswitch();
+            }, 6000);
+
+            this.$banner.hover(() => {
+                clearInterval(this.timer);
+            }, () => {
+                this.timer = setInterval(() => {
+                    this.num++;
+                    if (this.num > this.$piclilength - 1) {
+                        this.num = 0;
+                    }
+                    tabswitch();
+                }, 6000);
+            });
+        }
+    }
+    new Index().init();
 })(jQuery);

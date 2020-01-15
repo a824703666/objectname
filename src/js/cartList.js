@@ -57,7 +57,7 @@
         }
         //文本框值的改变
         valuechange() {
-            //++
+            //++的实现
             $('.quantity-add').on('click', function () {
                 let $num = $(this).prev().find('input').val();
                 $num++;
@@ -65,7 +65,7 @@
                 $(this).parents('.J_goods_item').find('.subtotal-item strong').html(singleprice($(this))); //求单个总价
                 local($(this).parents('.J_goods_item').find('img').attr('sid'), $num); //存储数量
             });
-            //--
+            //--的实现
             $('.quantity-down').on('click', function () {
                 let $num = $(this).next().find('input').val();
                 $num--;
@@ -76,7 +76,7 @@
                 $(this).parents('.J_goods_item').find('.subtotal-item strong').html(singleprice($(this)));
                 local($(this).parents('.J_goods_item').find('img').attr('sid'), $num);
             });
-            //直接输入
+            //直接输入数量
             $('.amount-num input').on('input', function () {
                 let $reg = /^\d+$/;
                 let $inputvlaue = $(this).val();
@@ -165,11 +165,6 @@
             //     _this.allprice();
             // });
         }
-
-
-
     }
-
     new Cartlist().init();
-
 })(jQuery);

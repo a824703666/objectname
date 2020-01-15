@@ -1,5 +1,5 @@
-! function ($) {
-    class Fdj {
+(function ($) {
+    class Scale {
         constructor() {
             this.wrap = $('.pic-sliderwrap');
             this.spic = $('#spic');
@@ -73,5 +73,5 @@
         }
     }
 
-    new Fdj().init();
-}(jQuery);
+    new Scale().init();
+})(jQuery);
