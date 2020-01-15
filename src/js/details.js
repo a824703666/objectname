@@ -22,6 +22,7 @@
                 dataType: 'json'
             }).done((objdata) => {
                 $('#spic img').attr('src', objdata.url);
+                $('#bpic').attr('src', objdata.url);
                 $('.J_brandName,.pib-title-detail').html(objdata.title);
                 $('.sp-price').html(objdata.price);
                 let piclist = objdata.urls.split(',');

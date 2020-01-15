@@ -2,15 +2,13 @@
     class Fdj {
         constructor() {
             this.wrap = $('.pic-sliderwrap');
-            // this.wrap=$('.wrap');
-            // this.spic=$('#spic');
             this.spic = $('#spic');
             this.sf = $('#sf');
             this.bf = $('#bf');
             this.bpic = $('#bpic');
             this.left = $('#left');
             this.right = $('#right');
-            this.ulmove = $('#pic-slider-items');
+            this.ulmove = $('#J-sImg-wrap');
             this.list = $('#J-sImg-wrap .pic-slider-items');
         }
         init() {
@@ -66,51 +64,11 @@
             });
 
 
-            //4.点击对应的li切换缩放的图片   $().attr('src')  $().attr('ss','qeq')
-            //#list ul li:委托的元素
-            //$(this):委托的元素。
-            this.ulmove.on('click', 'li', function () {
+            //点击对应的li切换缩放的图片
+            this.ulmove.on('click', '.pic-slider-items', function () {
                 let $imgurl = $(this).find('img').attr('src');
                 _this.spic.find('img').attr('src', $imgurl);
                 _this.bpic.attr('src', $imgurl);
-            });
-
-
-            //5.点击左右箭头，进行图片运动
-            let $num = 6; //可视的li的长度。
-            let $liwidth = this.list.eq(0).outerWidth(true); //1个li的宽度
-            if (this.list.size() <= $num) {
-                this.right.css('color', '#fff');
-            }
-
-
-            this.right.on('click', () => {
-                if (this.list.length > $num) {
-                    $num++;
-                    this.left.css('color', '#333');
-                    if ($num === this.list.length) {
-                        this.right.css('color', '#fff');
-                    }
-                    this.ulmove.animate({
-                        left: -($num - 6) * $liwidth
-                    });
-                    // this.ulmove.css('left',"'"+-($num - 6) * $liwidth+"'");
-                }
-                // animate   animate  animate 
-
-            });
-
-            this.left.on('click', () => {
-                if ($num > 6) {
-                    $num--;
-                    this.right.css('color', '#333');
-                    if ($num === 6) {
-                        this.left.css('color', '#fff');
-                    }
-                    this.ulmove.animate({
-                        left: -($num - 6) * $liwidth
-                    });
-                }
             });
         }
     }
