@@ -29,7 +29,6 @@
             }).done((data) => {
                 $.each(data, (index, value) => {
                     if (sid == value.sid) {
-                        console.log(value.url)
                         let $clonebox = $('.J_goods_item').clone(true, true);
                         $clonebox.find('.img-url').attr('src', value.url); 
                         $clonebox.find('.J_goods_item img').attr('sid', value.sid);                       
