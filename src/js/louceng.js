@@ -9,7 +9,7 @@
         strhtml += `
                 <div class="shop-card">
         <div class="shop-box">
-          <a href="">
+          <a href="shopList.html">
             <img class="shop-card-img" src="images/${value.src}" alt="" />
             <div class="info">
               <span class="info-name">${value.title}</span>
