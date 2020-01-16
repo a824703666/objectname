@@ -53,7 +53,7 @@
           }
         }).done(function (result) {
           if (result) {
-            history.go(-1);
+            window.Location.href="index1.html";
             localStorage.setItem("username", $(".username").val());
           } else {
             $('.error-text span').html("用户名或者密码错误");

@@ -20,6 +20,7 @@
                     }).done((result)=> {
                         if (!result) {
                             this.$userflag = true;
+                            window.location.href="login.html";
                             $('.username-text').html('');
                         } else {
                             $('.username-text').html('该用户名已经存在');
