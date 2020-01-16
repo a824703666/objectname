@@ -3,11 +3,11 @@
   class Louceng {
     constructor() {
       this.$box1 = $(".shopcard-box1");
-      this.box2 = $(".shopcard-box2");
-      this.box3 = $(".shopcard-box3");
-      this.box4 = $(".shopcard-box4");
-      this.box5 = $(".shopcard-box5");
-      this.box6 = $(".shopcard-box6");
+      this.$box2 = $(".shopcard-box2");
+      this.$box3 = $(".shopcard-box3");
+      this.$box4 = $(".shopcard-box4");
+      this.$box5 = $(".shopcard-box5");
+      this.$box6 = $(".shopcard-box6");
     }
     init() {
       $.ajax({
