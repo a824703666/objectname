@@ -21,7 +21,8 @@ if(isset($_POST['username'])){
 if(isset($_POST['submit'])){
     $username=$_POST['username'];
     //后端加密
-    $password=sha1($_POST['password']);
+    // $password=sha1($_POST['password']);
+    $password=$_POST['password'];
     $email=$_POST['email'];
 
     $conn->query("insert usertable values(null,'$username','$password','$email',NOW()) ");

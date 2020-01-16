@@ -38,30 +38,34 @@
         }
       });
       //登录
-      $(".u-submit-function").on("click", function () {
-        console.log("登录")
-        if ($(".username").val() == "" && $(".password").val() == "") {
-          $(".name-text span").html("请输入登录名");
-          $(".password-text span").html("请输入密码");
-          return false;
-        }
-        $.ajax({
-          type: "post",
-          url: "http://localhost/objectname/php/login.php",
-          data: {
-            user: $(".username").val(),
-            pass: hex_sha1($(".password").val())
+      function login() {
+        $(".u-submit-function").on("click", function () {
+          // console.log("登录")
+          if ($(".username").val() == "" && $(".password").val() == "") {
+            $(".name-text span").html("请输入登录名");
+            $(".password-text span").html("请输入密码");
+            return false;
           }
-        }).done(function (result) {
-          console.log(result)
-          if (result) {
-            window.Location.href="index1.html";
-            localStorage.setItem("username", $(".username").val());
-          } else {
-            $('.error-text span').html("用户名或者密码错误");
-          }
+          $.ajax({
+            type: "post",
+            url: "http://localhost/objectname/php/login.php",
+            data: {
+              user: $(".username").val(),
+              pass: $(".password").val()
+            }
+          }).done((result) => {
+            // console.log(result)
+            if (result) {
+              // alert(1)
+              Location.href ='index1.html';
+              localStorage.setItem("username", $(".username").val());
+            } else {
+              $('.error-text span').html("用户名或者密码错误");
+            }
+          });
         });
-      });
+      }
+      login();
     }
   }
   new Login().init();
