@@ -24,6 +24,7 @@
         url: "http://localhost/objectname/php/vipcart.php",
         dataType: "json"
       }).done(data => {
+          console.log(data)
         let strHtml = "";
         $.each(data, (index, value) => {
           if (sid == value.sid) {
@@ -33,13 +34,17 @@
                                                     <div class="m-product  product-small">
                                                         <div class="product-pic product-pic-trigger J_tooltips_trigger">
                                                             <a href="">
-                                                                <img class="img-url" src="${value.url}" alt="" width="58"
+                                                                <img class="img-url" sid="${value.sid}" src="${
+                                                                  value.url
+                                                                }" alt="" width="58"
                                                                     height="74">
                                                             </a>
                                                         </div>
                                                         <h3 class="product-title">
                                                             <span class="u-saletype u-saletype-0">自营</span>
-                                                            <a href="">${value.title}</a>
+                                                            <a href="">${
+                                                              value.title
+                                                            }</a>
                                                         </h3>
                                                         <p class="product-size">尺码：38</p>
                                                         <div class="product-price-tip">
@@ -51,7 +56,9 @@
                                                 <td class="price-item">
                                                     <div class="m-price price-num">
                                                         <span class="u-yen">￥</span>
-                                                        <strong class="u-price b-price">${value.price}</strong>
+                                                        <strong class="u-price b-price">${
+                                                          value.price
+                                                        }</strong>
                                                     </div>
                                                     <del class="m-price  market-price">
                                                         <span class="u-yen">￥</span>
@@ -79,7 +86,9 @@
                                                 <td class="subtotal-item">
                                                     <span class="m-price  subtotal-price">
                                                         <span class="u-yen">￥</span>
-                                                        <strong class="u-price">${(value.price * num).toFixed(2)}</strong>
+                                                        <strong class="u-price">${(
+                                                          value.price * num
+                                                        ).toFixed(2)}</strong>
                                                     </span>
                                                 </td>
                                                 <td class="actions-item">
@@ -95,8 +104,6 @@
           }
         });
       });
-
-      
     }
 
     //计算总价
@@ -111,17 +118,18 @@
         );
         $goodsprice += parseFloat(
           $(element)
-            .find(".price-num strong")
+            .find(".subtotal-price strong")
             .html()
         );
       });
       $(".J_info_numTotal").html($goodsnum);
-      $(".J_info_goodsTotal").html("￥" + $goodsprice);
+      $(".J_info_goodsTotal").html($goodsprice);
     }
     //文本框值的改变
     valuechange() {
+      let that = this;
       //++的实现
-      $(".quantity-add").on("click", function() {
+      $(".orders-table tbody").on("click", ".quantity-add", function() {
         let $num = $(this)
           .prev()
           .find("input")
@@ -142,9 +150,10 @@
             .attr("sid"),
           $num
         ); //存储数量
+        that.allprice();
       });
       //--的实现
-      $(".quantity-down").on("click", function() {
+      $(".orders-table tbody").on("click", ".quantity-down", function() {
         let $num = $(this)
           .next()
           .find("input")
@@ -168,9 +177,10 @@
             .attr("sid"),
           $num
         );
+        that.allprice();
       });
       //直接输入数量
-      $(".amount-num input").on("input", function() {
+      $(".orders-table tbody").on("input", ".amount-num input", function() {
         let $reg = /^\d+$/;
         let $inputvlaue = $(this).val();
         if ($reg.test($(this).val())) {
@@ -232,7 +242,6 @@
       let arrsid = [];
       let arrnum = [];
       let _this = this;
-
       function getstorage() {
         if (
           localStorage.getItem("cartsid") &&
@@ -260,7 +269,7 @@
       }
 
       //单条删除
-      $(".J_goods_item").on("click", ".c-order-button-del", function() {
+      $(".orders-table tbody").on("click", ".c-order-button-del", function() {
         getstorage(); //取出本地存储，转换成数组。
         if (window.confirm("你确定要删除吗?")) {
           $(this)
@@ -270,7 +279,7 @@
         delstorage(
           $(this)
             .parents("J_goods_item")
-            .find(".goods-pic img")
+            .find("img")
             .attr("sid"),
           arrsid
         );
