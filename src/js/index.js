@@ -11,16 +11,17 @@
             this.$piclilength = this.$bannerli.size();
         }
         init() {
-            this.$btnli.on('click', () => {
-                this.num = $(this).index();
+            let _this=this;
+            _this.$btnli.on('click', function(){
+                _this.num = $(this).index();
                 tabswitch();
             });
 
             function tabswitch() {
-                this.$btnli.eq(this.num).addClass('tabActive').siblings().removeClass('tabActive');
-                this.$bannerli.eq(this.num).animate({
+                _this.$btnli.eq(_this.num).addClass('tabActive').siblings().removeClass('tabActive');
+                _this.$bannerli.eq(_this.num).animate({
                     opacity: 1
-                }).siblings(this.$bannerli).animate({
+                }).siblings(_this.$bannerli).animate({
                     opacity: 0
                 });
             }
