@@ -127,7 +127,7 @@
     }
     //文本框值的改变
     valuechange() {
-      let that = this;
+      let _this = this;
       //++的实现
       $(".orders-table tbody").on("click", ".quantity-add", function() {
         let $num = $(this)
@@ -150,7 +150,7 @@
             .attr("sid"),
           $num
         ); //存储数量
-        that.allprice();
+        _this.allprice();
       });
       //--的实现
       $(".orders-table tbody").on("click", ".quantity-down", function() {
@@ -177,7 +177,7 @@
             .attr("sid"),
           $num
         );
-        that.allprice();
+        _this.allprice();
       });
       //直接输入数量
       $(".orders-table tbody").on("input", ".amount-num input", function() {
