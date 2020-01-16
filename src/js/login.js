@@ -39,6 +39,7 @@
       });
       //登录
       $(".u-submit-function").on("click", function () {
+        console.log("登录")
         if ($(".username").val() == "" && $(".password").val() == "") {
           $(".name-text span").html("请输入登录名");
           $(".password-text span").html("请输入密码");
@@ -52,6 +53,7 @@
             pass: hex_sha1($(".password").val())
           }
         }).done(function (result) {
+          console.log(result)
           if (result) {
             window.Location.href="index1.html";
             localStorage.setItem("username", $(".username").val());

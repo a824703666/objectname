@@ -20,7 +20,6 @@
                     }).done((result)=> {
                         if (!result) {
                             this.$userflag = true;
-                            window.location.href="login.html";
                             $('.username-text').html('');
                         } else {
                             $('.username-text').html('该用户名已经存在');
@@ -45,7 +44,7 @@
                     $('.again-password-text').html('');
                 }
             });
-            $('form').on('submit',()=> {
+            $('form').on('submit',()=> {                
                 if (this.$user.val() == '') {
                     $('.username-text').html('账号/邮箱不能为空');
                     this.$userflag = false;
