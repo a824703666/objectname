@@ -1,16 +1,15 @@
-(function($) {
-   class shopList{
-    constructor(){
-        this.inner=$(".inner");
+class ShopList {
+    constructor() {
+        this.inner = $(".inner");
     }
-    init (){
+    init() {
         $.ajax({
-      url: "http://localhost/objectname/php/vipcart.php",
-      dataType: "json"
-    }).done(data => {
-      let strhtml = "";
-      for (let value of data) {
-        strhtml += `
+            url: "http://localhost/objectname/php/vipcart.php",
+            dataType: "json"
+        }).done(data => {
+            let strhtml = "";
+            for (let value of data) {
+                strhtml += `
         <div class="goods-card">
                 <div class="content">
                     <div class="goods-img">
@@ -37,12 +36,13 @@
                 </h4>
             </div> 
                 `;
-      }
+            }
 
-      this.inner.html(strhtml);
-    });
+            this.inner.html(strhtml);
+        });
     }
-   
-   }
-   new shopList().init();
-  })(jQuery);
+
+}
+export {
+    ShopList
+}
